@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:concerns="http:///schemas/concerns/_N8qvYP2DEeOFY93jb2lkbw/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:patterns="http:///schemas/patterns/_wlXX8JVoEeOWwNcokQBARg/3" xmlns:relationships="http:///schemas/relationships/_ZXR5gI9OEeO5S8PTmh49hw/2" xmlns:smarty="http:///schemas/smarty/_cl6_wI9OEeO5S8PTmh49hw/3" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="20110701" xsi:schemaLocation="http:///schemas/patterns/_wlXX8JVoEeOWwNcokQBARg/3 resources/patterns.profile.uml#_wlbCUJVoEeOWwNcokQBARg http:///schemas/concerns/_SsrrUBWgEeObs-pQrJ2skQ/19 resources/concerns.profile.uml#_SsrrURWgEeObs-pQrJ2skQ http:///schemas/relationships/_ZXR5gI9OEeO5S8PTmh49hw/2 resources/relationships.profile.uml#_ZXU80I9OEeO5S8PTmh49hw http:///schemas/smarty/_cl6_wI9OEeO5S8PTmh49hw/3 resources/smarty.profile.uml#_cl7m0I9OEeO5S8PTmh49hw http:///schemas/concerns/_N8qvYP2DEeOFY93jb2lkbw/26 resources/concerns.profile.uml#_N8rWcP2DEeOFY93jb2lkbw ">
+  <uml:Model name="model" xmi:id="_xqzHwIzdEeO6Yt6TRR4QNg">
+    <profileApplication xmi:id="_2Q2s4I9OEeO5xq3Ur4qgFw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_2RHyoI9OEeO5xq3Ur4qgFw">
+        <references href="resources/concerns.profile.uml#_N8rWcP2DEeOFY93jb2lkbw" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/concerns.profile.uml#_9v_84HqaEeK1gM_kVgXLQw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_2RXDMI9OEeO5xq3Ur4qgFw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_2RlssI9OEeO5xq3Ur4qgFw">
+        <references href="resources/relationships.profile.uml#_ZXU80I9OEeO5S8PTmh49hw" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/relationships.profile.uml#__hjjkIzaEeO6Yt6TRR4QNg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_2RlssY9OEeO5xq3Ur4qgFw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_2R2ycI9OEeO5xq3Ur4qgFw">
+        <references href="resources/smarty.profile.uml#_cl7m0I9OEeO5S8PTmh49hw" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/smarty.profile.uml#_9ppH0MeqEeK-FvYCaEYIKA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_cyBBIJJmEeOENZsdUoZvrw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_cyb34JJmEeOENZsdUoZvrw">
+        <references href="resources/patterns.profile.uml#_wlbCUJVoEeOWwNcokQBARg" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/patterns.profile.uml#_lDDfsJJlEeOENZsdUoZvrw"/>
+    </profileApplication>
+  <packagedElement name="MediaCtrl" xmi:id="_uLcO4P2BEeOFY93jb2lkbw" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="ISendMedia" xmi:id="_O41P8P1zEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="sendMediaSMS" visibility="public" xmi:id="_SOC4QP1zEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="42589a34-453e-4d1c-90a3-6d305471ae1b">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="sendMediaEmail" visibility="public" xmi:id="_UD5moP1zEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="13e827e3-38e2-4124-9170-13f8b5836c63">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="getEmail" visibility="public" xmi:id="_VhAd0P1zEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="getNumber" visibility="public" xmi:id="_TTh5oP1zEeOFY93jb2lkbw"/>
+      </packagedElement>
+      <packagedElement clientDependency="56cba69f-85f9-4bd9-8ad3-e0d275811891" isAbstract="false" name="MediaCtrl" xmi:id="_HvV3YGazEeS5PLUVl44fEg" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="linkMedia" visibility="public" xmi:id="_t6VLwGazEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageMedia" visibility="public" xmi:id="_fC0k8GazEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="sendMedia" visibility="public" xmi:id="_l3bsUGazEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="labelMedia" visibility="public" xmi:id="_oR0rIGazEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="hearMedia" visibility="public" xmi:id="_rsvS0GazEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="playMedia" visibility="public" xmi:id="_glWusGazEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageFavouriteMedia" visibility="public" xmi:id="_wfugsGazEeS5PLUVl44fEg"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IManageMedia" xmi:id="_xsQJYP1kEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="logIn" visibility="public" xmi:id="_AoiGAP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="user" xmi:id="25db639b-258a-4ce4-b2d1-969c511e9419">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="16e89904-2679-4830-9f3c-5c73715c1403">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="createPhoto" visibility="public" xmi:id="_7_7jMP1lEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="photo" xmi:id="f42cdbca-42b1-43fb-9a5d-4da024c9515c">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="deletePhoto" visibility="public" xmi:id="_CL-OsP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="photo" xmi:id="32c650d3-3223-4721-a4c7-95959e8b2b7f">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="createVideo" visibility="public" xmi:id="_OMokMP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="video" xmi:id="ff044b21-2693-4f0b-958b-a99792408495">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showPhotos" visibility="public" xmi:id="_E_rFYP1mEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="showMusics" visibility="public" xmi:id="_J8NQ0P1mEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="deleteVideo" visibility="public" xmi:id="_PdZBcP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="video" xmi:id="4cc73ea0-b469-4e50-bdd5-d21c9314f6f3">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areThereMusics" visibility="public" xmi:id="_K7p7oP1mEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="2dac41b5-95d6-4242-a9a8-c88a98fdb1b6">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areTherePhotos" visibility="public" xmi:id="_EE7UYP1mEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="23d511cb-ae1c-426c-abae-577100ccd404">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showVideos" visibility="public" xmi:id="_RndsUP1mEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="hasMemory" visibility="public" xmi:id="__o_7oP1lEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="1493eed8-080d-45b7-be6a-0ea76bcc28b0">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areThereVideos" visibility="public" xmi:id="_Qrkr0P1mEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="6bc03536-f7d1-4958-9694-7bd24f74d0cc">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isPhotoUsed" visibility="public" xmi:id="_DKDAgP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="photo" xmi:id="fe05ff8b-1b50-4cd6-9c1a-392ce3b070a3">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="f292501b-c1a3-4181-ad65-60eb3f486c29">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isMusicUsed" visibility="public" xmi:id="_L8zPkP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="music" xmi:id="22fd696c-17e0-42b8-80b4-f4263c3f2e32">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="7fb9368d-a846-4170-bb77-89547a3114e6">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="createMusic" visibility="public" xmi:id="_JKticP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="music" xmi:id="fd440a73-4eac-4ea5-91f9-65a52cff857a">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="deleteMusic" visibility="public" xmi:id="_GhsRwP1mEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="music" xmi:id="e1bc505b-7eb6-4b33-b9a0-692561aa7b52">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IPlayMedia" xmi:id="_HkackP1yEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="playMusic" visibility="public" xmi:id="_M8acAP1yEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="music" xmi:id="704048a3-c6f8-4341-8d06-af9d3b0c4812">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="playVideo" visibility="public" xmi:id="_MFxH4P1yEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="video" xmi:id="dc559328-f0d1-4d57-9a64-3ae72c91b1cf">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="visualizePhoto" visibility="public" xmi:id="_NtdecP1yEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="photo" xmi:id="661fbe0a-ef20-4c7c-9218-9d4c3fa7ec11">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IHearMedia" xmi:id="_E31PoP10EeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="hasMediaAssociated" visibility="public" xmi:id="_Jr9tAP10EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="entry" xmi:id="ac9d61bf-7af4-4a51-8fae-bc53916654eb">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="media" xmi:id="10a187a2-4cb7-4e20-9d03-7c6c8b33c0b3">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="a50621c5-0fb2-477a-b680-de58adb8a3b3">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="playMusic" visibility="public" xmi:id="_IujCgP10EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="music" xmi:id="b9607d07-a020-47ed-a723-0ee9ec9bbcb0">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="visualizePhoto" visibility="public" xmi:id="_K4RvIP10EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="photo" xmi:id="ef3484b0-1d7a-40bc-b215-a89e2b0b8141">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="ILinkMedia" xmi:id="_5rcaQP10EeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="isMediaAssociated" visibility="public" xmi:id="_BJFQgP11EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="2fa9a41f-7af9-4db6-adf0-899050954f5e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="entry" xmi:id="6ea0fd1c-7d69-4c8e-bb65-2d1ff14d3892">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="1adea943-8677-4650-a7df-8aa28578c5d7">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areThereEntries" visibility="public" xmi:id="__0Jd4P10EeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="cfabf158-4b60-4ca6-b4bd-95066a5d5773">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showEntries" visibility="public" xmi:id="__CZ34P10EeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="linkMediaEntry" visibility="public" xmi:id="_94XtsP10EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="71dc64e1-09d6-49e2-b2f5-3fd2eeaa1017">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="entry" xmi:id="808509ff-aeb5-42b6-a104-54a75d60ee5a">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="ILabelFiles" xmi:id="_gXk-wP1zEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="isLabelBlank" visibility="public" xmi:id="_tItu8P1zEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="name" xmi:id="bbe97d20-1b2d-4826-ac86-40c69e5b9dc5">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="43dcab4b-4a61-4681-84ed-e2cf6b60614a">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isLabelUsed" visibility="public" xmi:id="_wMpaAP1zEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="label" xmi:id="f2148775-f5ea-4b6a-91ca-728822994e44">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="7d6cf957-1c19-49e9-89bb-ea9cd7585c09">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="setLabel" visibility="public" xmi:id="_l5XMUP1zEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="f60f4bf2-e894-4fbd-be69-3d5d01f22bfa">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="label" xmi:id="5e99378e-f570-48e5-be89-68657a1bfbbc">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isLabeled" visibility="public" xmi:id="_uWTjcP1zEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="4c7db93c-99b4-47c9-9231-8b994519e94c">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="ef419f30-4f6a-4469-b3f9-4c4a50f2c6ee">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IManageFavouriteMedia" xmi:id="_aIplEP14EeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="setFavourite" visibility="public" xmi:id="_eacKYP14EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="4622cb5a-1f54-4b98-b4cd-afe398603309">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areThereFavouriteMedias" visibility="public" xmi:id="_fW2IQP14EeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="ebf114b9-ae21-4396-bb75-8d6a6cc8421a">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showFavouriteMedias" visibility="public" xmi:id="_hD8jQP14EeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="isMediaFavourite" visibility="public" xmi:id="_dEPMcP14EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="d16d1acb-d7d3-4709-8b28-f4feafaa87bc">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="f4e0d4da-4331-47ad-9a9a-dc892d3b692a">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="AlbumMgr" xmi:id="_8CeoQP1iEeOFY93jb2lkbw" xmi:type="uml:Package">
+      <packagedElement clientDependency="bacf75f2-e4f3-4d15-9e5d-e15f4782a6d8" isAbstract="false" name="Album" xmi:id="_-ZXnIP1iEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showAlbum" visibility="public" xmi:id="_fnTLoP1jEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="addMediaAlbum" visibility="public" xmi:id="_fnMd8P1jEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="34ccf5f6-85b6-4353-b98f-a4d3316f8cb3">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="removeAlbum" visibility="public" xmi:id="_fnRWcP1jEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="7b5c4085-6c1c-42cf-82cd-a65b1146027e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="getAlbum" visibility="public" xmi:id="_fnR9hf1jEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="addAlbum" visibility="public" xmi:id="_fnSkkP1jEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="d359854c-8a58-4dac-a7d9-5dd4364b9d4b">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="hasAlbumThisMedia" visibility="public" xmi:id="_fnQvYP1jEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="aa6077cb-2495-462e-b56b-ca158a7b6656">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="e034f28b-04e7-4b75-b3f5-e3c9dc036993">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isAlbumEmpty" visibility="public" xmi:id="_fnR9gv1jEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="e72bb9c4-724e-490d-9cac-972dbb265af6">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedAttribute isUnique="false" name="name" visibility="public" xmi:id="08725784-da9f-4340-9666-f89120cdbb8e">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="c71fabea-7f00-4735-8ae8-7fd773c326f5" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="c0b9b258-0bc6-498d-aa62-b8449a186721" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="0eef97e2-0998-45ea-a5cd-118c4cfe4f97" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="media" type="_RIjNoP1kEeOFY93jb2lkbw" visibility="public" xmi:id="9ded94c1-ac54-4441-8e47-fe334857ae0f">
+          <lowerValue value="1" xmi:id="f36430c7-7d25-4668-9d8d-d6ca444f06a6" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="02648aef-4309-4f96-8dcc-1f6c8dac19eb" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="240574e0-b308-42f5-a9b1-8ae13682c65c" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IAlbumMgt" xmi:id="_7rQ3kP1hEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showAlbuns" visibility="public" xmi:id="_EbAO4P1iEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="removeAlbum" visibility="public" xmi:id="_B1C5QP1iEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="cc80b721-50bc-4ad4-a2a9-e7f1d4d215bf">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="addAlbum" visibility="public" xmi:id="_BGZDgP1iEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="897f4406-be31-40eb-8115-6068152e043b">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="getAlbum" visibility="public" xmi:id="_Cqc3QP1iEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="6fabcfe0-2313-488c-8888-618396a85446">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="getUser" visibility="public" xmi:id="_x3IMkP14EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="user" xmi:id="ec7f3671-a6e3-4cb9-bb69-168da53bbb64">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="hasAlbumThisMedia" visibility="public" xmi:id="_HjMu4P1iEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="1f18bceb-d64f-4429-ae50-9ab43a6affc7">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="album" xmi:id="3cbcc55d-ccd8-4f02-84ca-6387f07730a7">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="1ed8cdc3-ea4b-4abe-8693-cd2ffb05c0ef">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="addMediaAlbum" visibility="public" xmi:id="_JHz8QP1iEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="1413c426-7e2b-4636-9530-a47d04bb8f8e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="album" xmi:id="1fc3e6e4-a470-420d-93bd-4473b54e6872">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isAlbumEmpty" visibility="public" xmi:id="_LCRd0P1iEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="3afe0fc5-e357-486a-95eb-e78e3293a614">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="09ec5db2-0fe0-4a62-921b-a9d8071338bb">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isNameUsed" visibility="public" xmi:id="_KH0nwP1iEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="name" xmi:id="9d312800-3243-4fe1-a530-c4031d6e00e5">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="9c3fc41c-72c6-4280-ba80-86faf452fb10">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areThereAlbuns" visibility="public" xmi:id="_DlfjMP1iEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="42fea418-aea3-4f5d-95b3-8435e148dcbd">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="AlbumGUI" xmi:id="_j14wUP2BEeOFY93jb2lkbw" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="IAlbumGUI" xmi:id="_0LR08P2CEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="addMediaAlbum" visibility="public" xmi:id="_VyIuoGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageAlbum" visibility="public" xmi:id="_WRba4P2DEeOFY93jb2lkbw"/>
+      </packagedElement>
+      <packagedElement clientDependency="a17c41cf-ef6d-43ba-bac3-ab58ab599708" isAbstract="false" name="AlbumGUI" xmi:id="_GdijMGaxEeS5PLUVl44fEg" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="manageAlbum" visibility="public" xmi:id="_ZVC0sGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="addMediaAlbum" visibility="public" xmi:id="_aZTuEGaxEeS5PLUVl44fEg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="UserMgr" xmi:id="_Yq_08P1wEeOFY93jb2lkbw" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="IUserMgt" xmi:id="_umF5oP14EeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="isMediaUsed" visibility="public" xmi:id="_TAwvoP1oEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="3aa14343-7bcd-4535-a208-e17e4caf3254">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="ec81966e-b8d8-4c14-a68d-e5acdde1c4a9">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement clientDependency="aeec6849-5534-417f-ba1d-52789a553435" isAbstract="false" name="UserMgr" xmi:id="_em2IUP1wEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getUser" visibility="public" xmi:id="_DJSKgP1xEeOFY93jb2lkbw"/>
+        <ownedAttribute isUnique="false" name="user" type="_fuJHkP1wEeOFY93jb2lkbw" visibility="public" xmi:id="efa7a4a5-7c9c-49af-8314-609ce6618cea">
+          <lowerValue value="1" xmi:id="d7f75ed5-6415-4f2f-8dd9-fd298d0c731a" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="43e03199-c493-4955-837e-879582b48771" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="ca7db289-3545-45b1-99e9-73e40a20d58e" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="User" xmi:id="_fuJHkP1wEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="isMediaUsed" visibility="public" xmi:id="_98SMEP1uEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="name" xmi:id="2264407d-36ff-4058-8b5d-82e61b3779a5">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="c66093c2-93b8-4802-b942-97cfd624ad2b">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="checkPassword" visibility="public" xmi:id="_nOLKgP1wEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="password" xmi:id="02072476-a66d-4a02-96d5-976a8a12d4be">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="45ad7f69-a9d7-4ae8-8818-8fa1f52d490c">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="checkLogin" visibility="public" xmi:id="_mQFxoP1wEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="login" xmi:id="77b344ac-bfad-4dcc-ba50-280de9a72487">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="5c36a05a-ee78-49fe-bd6f-b7fa43afc8e6">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedAttribute isUnique="false" name="media" type="_RIjNoP1kEeOFY93jb2lkbw" visibility="public" xmi:id="aa6b6a16-af9e-4c5e-ac9d-877cb35fd147">
+          <lowerValue value="1" xmi:id="81ee7133-dade-4862-9846-2f3b478a0e8f" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="89dbf9b2-3369-4d37-8216-7d22702f368f" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="3c9c115f-a381-40b0-a603-667322857c8d" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="login" visibility="public" xmi:id="b9acd519-256a-40c1-9c33-baddd3546351">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="31e2fe03-a31d-4b83-9c47-064fbc356198" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="e88e5db8-3127-40b3-a6e1-4a1fc9b3703b" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="b8e74a76-d4f3-482f-b671-247bd21bbcc4" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="password" visibility="public" xmi:id="518f364a-b9e6-4090-879a-aa2b12abf021">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="13fab020-67ef-4e83-b7eb-d24b2ade889f" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="d615fa7b-d92f-4863-a293-f830337d58ab" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="b64518d6-cb80-46d5-a215-d58cae516ef1" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="EntryMgr" xmi:id="_JeNFMP1xEeOFY93jb2lkbw" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Entry" xmi:id="_ZPyHkP1xEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showEntry" visibility="public" xmi:id="_jnKyIP1xEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="getEntry" visibility="public" xmi:id="_jAZGAP1xEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="hasMediaAssociated" visibility="public" xmi:id="_m2aVUP1xEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="44b92aec-8fc2-4c89-ad50-1a70ab011372">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="linkMediaEntry" visibility="public" xmi:id="_oMpvgP1xEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="6988d51d-d60f-4d10-a67c-01106d53fe94">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedAttribute isUnique="false" name="name" visibility="public" xmi:id="3119e32b-f906-4679-b20e-740910756a70">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="ce91912e-e930-4f81-9e44-8d069aeed757" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="75f6123f-2164-4cd0-8072-ae9bfc93aefb" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="9db87d65-6df8-4db6-9eba-b1284b33f7a6" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="number" visibility="public" xmi:id="358bdecb-c79f-4803-8b1f-39cd4715b72f">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="c2618514-5983-4843-977d-d993bdd241c3" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="143f7d90-5691-4979-b4d7-f4eca3c9dd1f" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="0ffb06ef-cb6e-4bdb-8333-a0aff85ccfd3" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IEntryMgt" xmi:id="_cUPPsP10EeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="areThereEntries" visibility="public" xmi:id="_jpBE4P10EeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="e88745ae-5fc3-48a8-985e-1b2794f9363e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="hasMediaAssociated" visibility="public" xmi:id="_m0Y0sP10EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="entry" xmi:id="4e53b28b-e5ba-4ae7-8665-64e56446a8cd">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="media" xmi:id="2df6731a-e5ef-473c-9cf9-af161cb3f97a">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="6a13b5d1-b97f-477a-947a-22159401af85">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="linkMediaEntry" visibility="public" xmi:id="_oDoPAP10EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="6f2db4bb-0c62-47e8-96e5-08b4462ecf63">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="entry" xmi:id="7c4ee14a-ff59-4b10-b030-dc070d1c0a1e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showEntries" visibility="public" xmi:id="_lwKXkP10EeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="getEntry" visibility="public" xmi:id="_i1v04P10EeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="entry" xmi:id="c149253b-44a1-45b1-bb19-ba28bfa0dcd6">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement clientDependency="c757afcf-bf95-4b45-bc66-449e29b8f752" isAbstract="false" name="EntryMgr" xmi:id="_Lfm8QP1xEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="areThereEntries" visibility="public" xmi:id="_SnGjYP1xEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="5bfc7e4a-ab71-41d1-8802-57196144e987">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showEntries" visibility="public" xmi:id="_QLmxUP1xEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="linkMediaEntry" visibility="public" xmi:id="_RBeCUP1xEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="6062829e-3baf-4954-8e6e-ab7f54f09e6c">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="entry" xmi:id="7d3c3851-708e-4232-824c-728256d715c1">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedAttribute isUnique="false" name="entry" type="_ZPyHkP1xEeOFY93jb2lkbw" visibility="public" xmi:id="9fbaf06d-7228-4075-ad2c-3292be1f84e3">
+          <lowerValue value="1" xmi:id="977a5d33-1e98-41b4-876c-958c80fb5e3d" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="904c30c8-932f-4b0a-a0f5-69a58122457d" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="f56488be-1b11-4fe6-bcfa-be1239c055c1" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <ownedComment annotatedElement="_ZPyHkP1xEeOFY93jb2lkbw" xmi:id="e17adfd2-bca8-4cc9-a2eb-4ac04c10ea52">
+        <body/>
+      </ownedComment>
+      <ownedComment annotatedElement="_ZPyHkP1xEeOFY93jb2lkbw" xmi:id="8af75797-d33a-4518-a616-4c3528afa019">
+        <body/>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement name="MediaGUI" xmi:id="_HrVJoP2CEeOFY93jb2lkbw" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="IMediaGUI" xmi:id="_8gP70P2CEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="playMedia" visibility="public" xmi:id="_3yhq0GaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="hearMedia" visibility="public" xmi:id="_2-mTgGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageFavouriteMedia" visibility="public" xmi:id="_6Zr6UGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="sendMedia" visibility="public" xmi:id="_40vVwGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="linkMedia" visibility="public" xmi:id="_5nMtcGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageMedia" visibility="public" xmi:id="_SrX6MP2DEeOFY93jb2lkbw"/>
+      </packagedElement>
+      <packagedElement clientDependency="8b9b9895-2451-4137-95ae-125c611f75c5" isAbstract="false" name="MediaGUI" xmi:id="_nP_soGaxEeS5PLUVl44fEg" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="sendMedia" visibility="public" xmi:id="_t7jlsGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageMedia" visibility="public" xmi:id="_rDRxAGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="linkMedia" visibility="public" xmi:id="_yGBbAGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="playMedia" visibility="public" xmi:id="_tPyE0GaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="hearMedia" visibility="public" xmi:id="_r6iwMGaxEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageFavouriteMedia" visibility="public" xmi:id="_yrpQkGaxEeS5PLUVl44fEg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="AlbumCtrl" xmi:id="_6k4tQP2AEeOFY93jb2lkbw" xmi:type="uml:Package">
+      <packagedElement clientDependency="ac013b09-48bc-4888-bbf2-2d45096f1d4d" isAbstract="false" name="AlbumCtrl" xmi:id="_5fqM8GavEeS5PLUVl44fEg" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="addMediaAlbum" visibility="public" xmi:id="_FyFn4GawEeS5PLUVl44fEg"/>
+        <ownedOperation isAbstract="false" name="manageAlbum" visibility="public" xmi:id="_E54NgGawEeS5PLUVl44fEg"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IAddMediaAlbum" xmi:id="_Q-ugEP1gEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showAlbuns" visibility="public" xmi:id="_oMQWoP1gEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="areThereAlbuns" visibility="public" xmi:id="_xsc6gP1gEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="271f523c-fcf4-447b-916f-bd71007e930f">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="addMediaAlbum" visibility="public" xmi:id="_mDlZ8P1gEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="6e980976-3003-477b-85bd-26d2f71db078">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="album" xmi:id="322e6e03-cfdd-4c25-8d22-946d64d15c89">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="hasAlbumThisMedia" visibility="public" xmi:id="_sRXx4P1gEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="6c31fa33-9fa0-442d-80b2-68d19fee4089">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="album" xmi:id="3c6ee58c-ec6a-41a1-8f31-155a623a3444">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="204f3f93-716d-4066-9ea2-b70109ae82ef">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IManageAlbum" xmi:id="_yru4IP1eEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="deleteAlbum" visibility="public" xmi:id="_lYIeoP1fEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="43fe33e6-9b63-456f-a6e6-f113a6dc2ac6">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areThereAlbuns" visibility="public" xmi:id="_feX18P1fEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="3449b512-71bf-4142-811a-c49a7e32d0cd">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isAlbumEmpty" visibility="public" xmi:id="_i3HTZP1fEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="98b3f9b2-123d-4a3d-a8d9-cf7abbca6e8f">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="d03e5d48-b222-417f-aeb8-59699c30fa4b">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="createAlbum" visibility="public" xmi:id="_kXb2oP1fEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="album" xmi:id="4719e021-9bd2-4e2b-9848-30a4c9bc07c4">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isNameUsed" visibility="public" xmi:id="_hyWDsP1fEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="name" xmi:id="8825a80d-8a7c-46a0-9e98-d1877f100276">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="e62ab84a-00f4-4fb5-9610-c2beb5481d7e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showAlbuns" visibility="public" xmi:id="_g5d68P1fEeOFY93jb2lkbw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package8942Mgr" xmi:id="b8fc902f-f147-4d21-9373-45162544be82" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Photo" xmi:id="_RwI8oP1lEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getMedia" visibility="public" xmi:id="_qsjSsP1sEeOFY93jb2lkbw"/>
+        <ownedAttribute isUnique="false" name="photoFile" visibility="public" xmi:id="25e30ab2-e1f5-4508-a4b9-ae38e5b653e5">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="e20bc760-562e-47e8-9a93-561eaba52986" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="c98bd291-01b8-4c2f-b398-1a3ad0f10e35" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="fe6f55ec-ee99-47d9-9855-0f7ff7fbfa5f" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="45d6d4c3-c800-4416-a183-b04f3fe75351"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Video" xmi:id="_SnyWUP1lEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getMedia" visibility="public" xmi:id="_TeIrUP1sEeOFY93jb2lkbw"/>
+        <ownedAttribute isUnique="false" name="videoFile" visibility="public" xmi:id="64d78f99-11eb-4211-961a-cb8d954a5608">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="6cbf40e6-1413-4915-88a7-637a8726161f" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="244280d9-2bd3-4c82-93a1-ebb181056f27" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="b8f34672-25f6-4c5f-a97a-246e2fe441fd" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="04342dd3-0ef2-40c7-b324-6bc07d81ec50"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Media" xmi:id="_RIjNoP1kEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="addMedia" visibility="public" xmi:id="_WEzBAP1rEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="293fe524-11a8-4e84-a021-37d2afae4c50">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="2bae9cee-08f8-4017-8df3-cb6b5f8bdab3">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="copyMedia" visibility="public" xmi:id="_f4E48P1rEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="showMedia" visibility="public" xmi:id="_cYbiQP1rEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="setFavourite" visibility="public" xmi:id="_hha1UP1rEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="name" xmi:id="0a4daada-9309-477a-92c8-51f35ff3d56b">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="removeMedia" visibility="public" xmi:id="_Wu4f0P1rEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="8897d943-b656-4d5c-95a5-03a387dea33a">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="setLabel" visibility="public" xmi:id="_griWMP1rEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="label" xmi:id="df5559a8-937c-40a1-88f2-2d638100815c">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="true" name="getMedia" visibility="public" xmi:id="_Xg6ZsP1rEeOFY93jb2lkbw"/>
+        <ownedAttribute isUnique="false" name="favourite" visibility="public" xmi:id="ba7e61dc-fc39-4429-b9b3-4eb5fcc66f3c">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="f8e371c2-2981-441b-a219-894dd4b08485" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="8d019b07-7d63-4c4c-9b02-a9813060fa1e" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="eecae240-d68b-4896-8fca-9ade5e94a094" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="size" visibility="public" xmi:id="a9fe38d9-3b32-4932-a942-760dbf871e42">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="740887cc-d0cf-4822-8e61-dedf60848de2" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="29053fcf-4a5c-4e66-9020-f209df1ad48f" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="ccc2048e-f29e-4190-8fbc-eb07d96f1df7" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="name" visibility="public" xmi:id="77c7752d-3cec-4aaa-baca-009705d9292e">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="5ef64d2b-f8f3-4603-a67e-e1b14d9c907b" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="ff254db6-15bd-43be-8ee4-40e24f757ce0" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="76932609-77a1-43c6-ae7d-647f03a1be21" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="entry" type="_ZPyHkP1xEeOFY93jb2lkbw" visibility="public" xmi:id="3416962a-beff-4ce7-80fd-93091b340ded">
+          <lowerValue value="1" xmi:id="c05539b5-b9b0-40c9-a46a-b8a4527312c1" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="8efba977-003c-491e-ab92-296bc4577d6c" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="588942e9-33fd-4358-a982-92ee459c67b7" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="label" visibility="public" xmi:id="bee4bf2a-a787-4955-8369-db16cc464919">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="669aee5b-e154-4c24-9dea-268225fd6d99" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="3fea4740-46c9-4d99-9283-22efa725945f" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="407e9203-d5f6-41d9-a650-29d9a7fee81f" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="numberOfExecutions" visibility="public" xmi:id="233d02b8-4ad6-418b-9783-724f1624bd82">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="27781a5e-4007-44cc-a1d1-1f1129ecdc4a" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="2d470e13-4db3-4704-a232-44152f59285a" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="d794bc9a-d50d-4630-8283-691840099612" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Class1774" xmi:id="91643e79-a240-4e73-b23c-08f96594572f" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="hasMemory" visibility="public" xmi:id="_-7XqgP1uEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="d99a4b9b-aeb8-4a0a-86c7-ff63405a4a69">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="cb4429ee-12b1-429a-a7f2-dcf3a9029c04">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Interface8865" xmi:id="6363fac7-959f-47ed-b048-ee705177470f" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="addMedia" visibility="public" xmi:id="_uwYt0P1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="5a959cd9-2336-4dab-91aa-7e6c923639c0">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="hasMemory" visibility="public" xmi:id="_8h8ZMP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="70ca8103-01d1-46e4-8e9a-4641a3df9aaa">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="0abc78d3-aa79-493d-a68b-a67b1237de58">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="removeMedia" visibility="public" xmi:id="_v3Vu0P1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="9a9c3d1e-0edd-4ac6-9e44-78e904448af8">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="copyMedia" visibility="public" xmi:id="_2WuNEP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="a16e1225-b213-467f-a757-88901b00df1b">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Music" xmi:id="_RQFjkP1lEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getMedia" visibility="public" xmi:id="_gVqXYP1sEeOFY93jb2lkbw"/>
+        <ownedAttribute isUnique="false" name="musicFile" visibility="public" xmi:id="8c4ccd5f-c2c1-4b6d-9def-7bc2ef470b87">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="432d3fae-b473-46ab-a43c-52ca7e0ebe71" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="5cbdc029-7fe3-4db0-80d6-d2af06cc7033" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="757d543c-d214-4c98-b040-3bb0033ec61f" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="8a678771-f360-4dc6-92a3-f192f87287ee"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9082Mgr" xmi:id="22a6f490-d636-4767-8a0f-a416b9fdad15" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Interface8998" xmi:id="ec4adead-6889-4939-b63b-f3898b34414e" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getMedia" visibility="public" xmi:id="_x0zhEP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="82730e5f-9ccf-443d-9c4c-c7cba2550d19">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Class1805" xmi:id="71893b4a-0ee7-4f57-b6f3-2588c3334b9c" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showVideos" visibility="public" xmi:id="_MoN1AP1vEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="areThereVideos" visibility="public" xmi:id="_KthC4P1vEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="dd13aa55-4a35-4879-8311-4e801bfbf1da">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9160Ctrl" xmi:id="b52b89ce-ac97-4cb8-b174-4af37f8d9df0" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Interface9071" xmi:id="64a01763-8429-434b-8ca4-fab29c2728b2" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="copyMedia" visibility="public" xmi:id="_ym_QIP1gEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="e2a1238c-1153-4642-8f1d-741386760578">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9281Mgr" xmi:id="af6432e4-846e-456e-8372-784263e6ef67" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Interface9182" xmi:id="7ba9b33d-e9c5-4fe7-8a57-5b3cb2574d89" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="setFavourite" visibility="public" xmi:id="_7a_YMP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="6a38aaa5-b67c-4f41-9592-02fabb09b5cf">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isMediaFavourite" visibility="public" xmi:id="_6N2PoP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="c338aa84-a4d6-4df1-8ff2-93a9796eb683">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="b06c0c02-8e81-4846-875d-8acfa09cc3a8">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="areThereFavouriteMedia" visibility="public" xmi:id="_yzW0AP1nEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="d22ee652-cdc7-4b56-ad6a-fd6a7aeae25e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Class1862" xmi:id="167bfc97-1921-4246-ad22-234b45f990cf" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="areThereFavouriteMedia" visibility="public" xmi:id="_G3biIP1vEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="c6310475-c504-4a21-9780-01f8f20a70e0">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isMediaFavourite" visibility="public" xmi:id="__41_YP1uEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="4adb40c3-1968-4a88-a839-652c1ff0bccc">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="7723236c-e5ad-47d2-9f2b-34ed7a2008a5">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9328Mgr" xmi:id="4b084f24-25e9-4816-9049-a5a06632aa63" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Class1877" xmi:id="74d4fbea-c2c5-48b8-85e6-e48c43a5c8e6" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="isLabeled" visibility="public" xmi:id="_D6aXYP1vEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="bec2f3b9-4eb0-40f8-b953-ae7d1aeb2700">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="46702d67-9e49-4b5b-a90e-e142bf526104">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isLabelUsed" visibility="public" xmi:id="_BDwTUP1vEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="label" xmi:id="c2a2f30f-819e-4264-aa22-af85fbbc5663">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="432889d1-23a6-46b7-9cb5-3d35aa3986be">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Interface9223" xmi:id="c1c477d9-f9d1-4d86-870f-732fff94edb1" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="isLabelUsed" visibility="public" xmi:id="_5POEMP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="label" xmi:id="fcc3bef9-0e93-4c0e-8a9d-12cec17d41fa">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="1fdcdefd-10dd-4fec-af54-338339fbbf67">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="setLabel" visibility="public" xmi:id="_30ZsAP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="1865fa8f-1ad7-4939-8b16-24205d2c4cbd">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="label" xmi:id="338944d1-743c-4366-bc03-97d8cdaa663f">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="isLabeled" visibility="public" xmi:id="_4szToP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="f623ec69-16a4-4fff-9b53-3dc20cc16dfe">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="b01714f2-26bb-44d7-9a03-98cba63c72f8">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9420Mgr" xmi:id="7db041b2-e57b-441f-b397-480422721c95" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Class1898" xmi:id="21e59a32-65a0-459e-86e7-ae0c80853ebf" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="areTherePhotos" visibility="public" xmi:id="_STadQP1vEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="3f583250-5a49-4846-9642-e6b3ee02de81">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showPhotos" visibility="public" xmi:id="_TRFmcP1vEeOFY93jb2lkbw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9480Mgr" xmi:id="494b7f8f-e095-4e82-b039-1b5d87eb9f7f" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Interface9364" xmi:id="4ae36cc7-25b6-4cef-8a01-baf4fcd8002d" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="sendMediaEmail" visibility="public" xmi:id="_UHpfMP1oEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="cf8844fd-9e5f-471e-aa61-dc6046772b6e">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="email" xmi:id="f037df17-2fb8-4587-ac68-a2fd98eba69d">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="sendMediaSMS" visibility="public" xmi:id="_VIq3UP1oEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="media" xmi:id="8a0a8d66-1805-4000-846f-17e6df9610ed">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter isUnique="false" name="number" xmi:id="6d6edb5d-2076-4ab2-bcd6-668b5eebb4cf">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9526Mgr" xmi:id="981a3adf-e9c4-48f7-8ebf-a922977743d6" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="IMediaMgt" xmi:id="_risp0P1nEeOFY93jb2lkbw" xmi:type="uml:Class"/>
+      <packagedElement isAbstract="false" name="Interface9410" xmi:id="85ba4499-cd9c-49ba-a9f2-0a33ae0fe44b" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="areThereMedia" visibility="public" xmi:id="_0cjmcP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="classType" xmi:id="2e816cf3-cfdb-4976-98f2-d7439423d2d6">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+          <ownedParameter direction="return" name="" xmi:id="8d1290c6-048e-425b-bf12-fff4f5be56ed">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Interface9890" xmi:id="c00a0227-eae2-41e8-a49f-a7997060a9c5" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showMedia" visibility="public" xmi:id="_11ZosP1nEeOFY93jb2lkbw">
+          <ownedParameter isUnique="false" name="classType" xmi:id="e0aad526-17c6-449e-8ff3-ab8d6b36a5c8">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement clientDependency="2e388600-ba04-45e7-ac23-47490ca8392a" isAbstract="false" name="MediaMgr" xmi:id="_xFubQP1sEeOFY93jb2lkbw" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="areThereMedia" visibility="public" xmi:id="_FaMvIP1vEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="58cc9588-f6bd-4507-a4d0-b7a7b63adfe9">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation isAbstract="false" name="showMedias" visibility="public" xmi:id="_IwCpkP1vEeOFY93jb2lkbw"/>
+        <ownedAttribute isUnique="false" name="media" type="_RIjNoP1kEeOFY93jb2lkbw" visibility="public" xmi:id="14022a13-b3e2-47e4-b9d4-7cce49c47140">
+          <lowerValue value="1" xmi:id="a88fda32-9a0e-438c-89da-ea43fa8a2139" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="a19b5632-d79b-4f0e-b136-4aa740cfa1ff" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="85bde106-b4bc-4833-be2b-6295f6459f04" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="Package9782Mgr" xmi:id="c84df13b-0aa0-4e16-b27f-044274323ec3" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Class1963" xmi:id="759deb67-2ec9-4c2c-982b-598106c16807" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showMusics" visibility="public" xmi:id="_RqKr8P1vEeOFY93jb2lkbw"/>
+        <ownedOperation isAbstract="false" name="areThereMusics" visibility="public" xmi:id="_Oung0P1vEeOFY93jb2lkbw">
+          <ownedParameter direction="return" name="" xmi:id="925a7ab1-639d-48d2-aa79-903a9e140cb5">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement memberEnd="ba959278-f4c2-4f55-8755-5ee2c654e652 00f6a9fa-9f1b-4eea-8917-a8512769f10d" name="album_media_1" navigableOwnedEnd="00f6a9fa-9f1b-4eea-8917-a8512769f10d" xmi:id="2cdd600b-4991-4d8c-8eac-8a138928ab50" xmi:type="uml:Association">
+      <ownedEnd association="2cdd600b-4991-4d8c-8eac-8a138928ab50" name="Album" type="_-ZXnIP1iEeOFY93jb2lkbw" xmi:id="ba959278-f4c2-4f55-8755-5ee2c654e652">
+        <lowerValue value="1" xmi:id="e0d29b53-1c49-4805-9820-0918029e42c9" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="1815bcb6-3b47-45bf-bf6c-a5aae0e7d7d9" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="2cdd600b-4991-4d8c-8eac-8a138928ab50" name="Media" type="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="00f6a9fa-9f1b-4eea-8917-a8512769f10d">
+        <lowerValue value="0" xmi:id="a400de94-9d01-4eee-b7e5-708a28b888d9" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="e94d6e84-4ef0-4f8b-a5d2-42eb963d2557" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="e5eabd39-0a57-4da1-a926-0e6952f536c5 3338541c-82dd-4f8e-ae19-1714b45c9b83" name="media_entry_1" navigableOwnedEnd="3338541c-82dd-4f8e-ae19-1714b45c9b83" xmi:id="adf927e5-ad03-47bd-ab58-5fa8d7749c5e" xmi:type="uml:Association">
+      <ownedEnd association="adf927e5-ad03-47bd-ab58-5fa8d7749c5e" name="Media" type="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="e5eabd39-0a57-4da1-a926-0e6952f536c5">
+        <lowerValue value="0" xmi:id="d05bcfce-5131-4189-ba33-5eb4316156c7" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="a4640b31-2a40-4872-b595-7fd34a0460fd" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="adf927e5-ad03-47bd-ab58-5fa8d7749c5e" name="Entry" type="_ZPyHkP1xEeOFY93jb2lkbw" xmi:id="3338541c-82dd-4f8e-ae19-1714b45c9b83">
+        <lowerValue value="0" xmi:id="5f0b3e09-ddf0-4c40-bf46-961486a4cb50" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="7350e028-5a4c-4c5b-a3d1-cf1abe034cf9" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="37e49308-76b5-4f97-bd69-359f4b133b04 330cc071-34be-458f-85f1-0d8e3d88c5b3" name="user_media_1" navigableOwnedEnd="330cc071-34be-458f-85f1-0d8e3d88c5b3" xmi:id="861458a9-b0cf-4716-aa18-65833bc0928d" xmi:type="uml:Association">
+      <ownedEnd association="861458a9-b0cf-4716-aa18-65833bc0928d" name="User" type="_fuJHkP1wEeOFY93jb2lkbw" xmi:id="37e49308-76b5-4f97-bd69-359f4b133b04">
+        <lowerValue value="1" xmi:id="5a4eb2b7-bf83-48ec-89f5-5d46d3749375" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="dc6c6918-de01-4fff-b125-5d830cbedbe6" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="861458a9-b0cf-4716-aa18-65833bc0928d" name="Media" type="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="330cc071-34be-458f-85f1-0d8e3d88c5b3">
+        <lowerValue value="0" xmi:id="6d18118f-af94-43de-ad4e-581f2c04f452" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="cb017480-98c3-49fb-a4bd-90f1e78e7aca" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="169bbd9a-4485-43ac-a86e-2ca16161da5f 40cb4508-1267-46a4-9833-9c8dd80313c1" name="" xmi:id="c22bafc9-8442-4b0f-8895-f29be1b9504c" xmi:type="uml:Association">
+      <ownedEnd association="c22bafc9-8442-4b0f-8895-f29be1b9504c" name="Class1774" type="91643e79-a240-4e73-b23c-08f96594572f" xmi:id="169bbd9a-4485-43ac-a86e-2ca16161da5f">
+        <lowerValue value="1" xmi:id="a549bec3-1b8c-47d7-8cb6-1eabc2b85793" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="c433fe97-2307-43ca-a572-59028c5237a7" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="c22bafc9-8442-4b0f-8895-f29be1b9504c" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="40cb4508-1267-46a4-9833-9c8dd80313c1">
+        <lowerValue value="1" xmi:id="50f12831-d298-42cd-be39-40651b1345c3" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="a6f8e453-50a3-4e00-af43-87f17b9bcba4" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="94c345ca-2613-4145-b3fb-e7bb2b9630ef d2bdfca2-f20e-4141-b828-cd19f7300db8" name="" xmi:id="670a0f00-ba56-4dff-baa5-1a46c6a242b4" xmi:type="uml:Association">
+      <ownedEnd association="670a0f00-ba56-4dff-baa5-1a46c6a242b4" name="User" type="_fuJHkP1wEeOFY93jb2lkbw" xmi:id="94c345ca-2613-4145-b3fb-e7bb2b9630ef">
+        <lowerValue value="1" xmi:id="3890e2b9-9f67-4721-b889-2056d48cb51c" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="40c46be5-4248-4e2a-88c2-202e7439fda1" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="670a0f00-ba56-4dff-baa5-1a46c6a242b4" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="d2bdfca2-f20e-4141-b828-cd19f7300db8">
+        <lowerValue value="1" xmi:id="366e92d9-44a0-4b88-9cd5-03acf3344b9e" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="2758ec56-0f46-4fe0-b57b-8c000337ffdc" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="d3b9858d-cde1-40fb-a7f9-1d4e61060b4b 8aef64db-08a3-4609-a83f-26d722ab20fa" name="" xmi:id="434cf71a-85ba-48b5-8fb7-8554b53585bc" xmi:type="uml:Association">
+      <ownedEnd association="434cf71a-85ba-48b5-8fb7-8554b53585bc" name="Class1805" type="71893b4a-0ee7-4f57-b6f3-2588c3334b9c" xmi:id="d3b9858d-cde1-40fb-a7f9-1d4e61060b4b">
+        <lowerValue value="1" xmi:id="a656ef4e-85c6-494e-8689-417f39249110" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="b7fe6339-231d-4d47-8396-aa733b3e8591" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="434cf71a-85ba-48b5-8fb7-8554b53585bc" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="8aef64db-08a3-4609-a83f-26d722ab20fa">
+        <lowerValue value="1" xmi:id="7d7c4d66-5190-461b-a487-1ceb6971f6cc" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="5b3f8888-3d0b-426d-9120-ab6ef9cd9fb7" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="fa18dd4d-2f1d-40a8-a0b2-ede66c43419d 7180ebee-6ac3-4f5c-9cb3-c76133cf74ca" name="" xmi:id="c2b96db4-aa73-477b-9543-dc923b067bcb" xmi:type="uml:Association">
+      <ownedEnd association="c2b96db4-aa73-477b-9543-dc923b067bcb" name="Class1862" type="167bfc97-1921-4246-ad22-234b45f990cf" xmi:id="fa18dd4d-2f1d-40a8-a0b2-ede66c43419d">
+        <lowerValue value="1" xmi:id="11d8190b-d09e-47af-9d95-85c383b723d4" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="5e55c9c6-6630-4dc7-9e7a-e0c2d114beaf" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="c2b96db4-aa73-477b-9543-dc923b067bcb" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="7180ebee-6ac3-4f5c-9cb3-c76133cf74ca">
+        <lowerValue value="1" xmi:id="a9e7d88d-062c-4841-b9ae-7263dd1aafa2" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="08fbb2a8-1618-49d6-831a-e602267a438c" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="ca7fe144-677d-4d78-80b1-fafc97dae561 ce98ab97-ccd7-4068-aedd-e4691cb9c741" name="" xmi:id="4480c7da-45e6-4d6c-bd2f-46cf031040e0" xmi:type="uml:Association">
+      <ownedEnd association="4480c7da-45e6-4d6c-bd2f-46cf031040e0" name="Class1877" type="74d4fbea-c2c5-48b8-85e6-e48c43a5c8e6" xmi:id="ca7fe144-677d-4d78-80b1-fafc97dae561">
+        <lowerValue value="1" xmi:id="cb588f12-cad7-4904-8734-85a2b10268e4" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="b651e440-b090-4dca-9857-9125dd372c41" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="4480c7da-45e6-4d6c-bd2f-46cf031040e0" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="ce98ab97-ccd7-4068-aedd-e4691cb9c741">
+        <lowerValue value="1" xmi:id="ef45f79d-07f9-44f1-a52d-ad123e2127b4" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="f0e912a0-76be-41a7-b683-c179f0cb6a9f" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="95f711a5-b4a6-407d-88fa-7ab559ec6f3b 8f097de5-7590-4908-9ec2-5f1f6d392faa" name="" xmi:id="d2c7c2b2-7bcd-4251-9d4a-93e4d8e70f29" xmi:type="uml:Association">
+      <ownedEnd association="d2c7c2b2-7bcd-4251-9d4a-93e4d8e70f29" name="Class1898" type="21e59a32-65a0-459e-86e7-ae0c80853ebf" xmi:id="95f711a5-b4a6-407d-88fa-7ab559ec6f3b">
+        <lowerValue value="1" xmi:id="cf8d85a8-0b9c-4ff7-a92f-689cf0dd71c4" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="23447235-591f-4175-833d-a54214820e2c" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="d2c7c2b2-7bcd-4251-9d4a-93e4d8e70f29" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="8f097de5-7590-4908-9ec2-5f1f6d392faa">
+        <lowerValue value="1" xmi:id="e368ad92-ed31-4703-8c28-96216b9750e5" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="ef5cc63d-48f7-42dd-b8cb-35548f55b938" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="6dbe89ea-7fcb-4151-8fb0-37f3d5c35a86 6812dc0b-9e54-426c-a849-be27084b4f8d" name="" xmi:id="c170f544-6620-4327-adca-61789b34a548" xmi:type="uml:Association">
+      <ownedEnd association="c170f544-6620-4327-adca-61789b34a548" name="Class1963" type="759deb67-2ec9-4c2c-982b-598106c16807" xmi:id="6dbe89ea-7fcb-4151-8fb0-37f3d5c35a86">
+        <lowerValue value="1" xmi:id="0f1e3d25-6e85-4f75-bdc0-32a0aa696185" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="9ac9eb09-c0bf-4816-bb8f-75219e1951ce" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="c170f544-6620-4327-adca-61789b34a548" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="6812dc0b-9e54-426c-a849-be27084b4f8d">
+        <lowerValue value="1" xmi:id="b847c156-062a-47ae-80ec-632576cca442" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="3c715b55-a97e-4a80-be95-714a4d75a9b3" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="f61ac2f2-e331-4d16-98bf-04571e192c19 0ec0b1df-216a-4d42-aabb-8324adfbfb84" name="mediaMgr_media_1" navigableOwnedEnd="f61ac2f2-e331-4d16-98bf-04571e192c19" xmi:id="93b32de1-b820-49fe-8d62-86f7358c6770" xmi:type="uml:Association">
+      <ownedEnd aggregation="shared" association="93b32de1-b820-49fe-8d62-86f7358c6770" name="Media" type="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="f61ac2f2-e331-4d16-98bf-04571e192c19">
+        <lowerValue value="0" xmi:id="2fe6c901-dd4c-4337-b91b-5284a5d95243" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="36cba94d-37ae-4a3e-81b0-98d0ccbcb59d" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="93b32de1-b820-49fe-8d62-86f7358c6770" name="MediaMgr" type="_xFubQP1sEeOFY93jb2lkbw" xmi:id="0ec0b1df-216a-4d42-aabb-8324adfbfb84">
+        <lowerValue value="1" xmi:id="cd9f8758-46de-4793-bca3-a2b9e550b0db" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="c2185d60-5ef1-493d-8625-507e7d9169a1" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="7b11ccff-fef1-4065-810e-749ad57570cf 420a793b-9292-4b5f-97eb-b55cb58d6d74" name="userMgr_user_1" navigableOwnedEnd="7b11ccff-fef1-4065-810e-749ad57570cf" xmi:id="9827e1cb-1a4a-416c-abad-5a0c25f7d78f" xmi:type="uml:Association">
+      <ownedEnd aggregation="shared" association="9827e1cb-1a4a-416c-abad-5a0c25f7d78f" name="User" type="_fuJHkP1wEeOFY93jb2lkbw" xmi:id="7b11ccff-fef1-4065-810e-749ad57570cf">
+        <lowerValue value="1" xmi:id="25e3cc8d-def6-48cf-b867-d2fcd5e585fb" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="eef6d127-16f4-493f-896e-4442ee8b612f" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="9827e1cb-1a4a-416c-abad-5a0c25f7d78f" name="UserMgr" type="_em2IUP1wEeOFY93jb2lkbw" xmi:id="420a793b-9292-4b5f-97eb-b55cb58d6d74">
+        <lowerValue value="1" xmi:id="a8fe4b83-661f-4008-8b61-7b6fe4b023e5" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="8ed9e30a-d91b-4c7b-abbd-18b4f5c02219" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="c523a27d-5fbe-47c8-b80a-88ad1f328cfe 4ad050ff-df05-4337-b4f9-bca8ca0edb7e" name="entryMgr_entry_1" navigableOwnedEnd="c523a27d-5fbe-47c8-b80a-88ad1f328cfe" xmi:id="075b5ff9-d7ee-40bb-b4e2-7a2693090e95" xmi:type="uml:Association">
+      <ownedEnd aggregation="shared" association="075b5ff9-d7ee-40bb-b4e2-7a2693090e95" name="Entry" type="_ZPyHkP1xEeOFY93jb2lkbw" xmi:id="c523a27d-5fbe-47c8-b80a-88ad1f328cfe">
+        <lowerValue value="0" xmi:id="38d8a68b-f38b-4ef8-89a3-2d8c172ac692" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="97d4b10e-fdef-4479-b102-d61956ba2a04" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="075b5ff9-d7ee-40bb-b4e2-7a2693090e95" name="EntryMgr" type="_Lfm8QP1xEeOFY93jb2lkbw" xmi:id="4ad050ff-df05-4337-b4f9-bca8ca0edb7e">
+        <lowerValue value="1" xmi:id="4399ac1e-7d75-45ec-9dda-0e4a09c3c838" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="88b475c1-5e6b-45d8-a90c-75d42de931ac" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="" supplier="_O41P8P1zEeOFY93jb2lkbw" xmi:id="a1e1663e-6b9f-474d-adc6-50a92e32da2c" xmi:type="uml:Dependency"/>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="" supplier="_xsQJYP1kEeOFY93jb2lkbw" xmi:id="84b1b85e-5dea-4bd6-b53e-a2138e6cbf5c" xmi:type="uml:Dependency"/>
+    <packagedElement client="_GdijMGaxEeS5PLUVl44fEg" name="" supplier="_yru4IP1eEeOFY93jb2lkbw" xmi:id="390cac48-2043-4294-9dc3-6277ef6f5cda" xmi:type="uml:Dependency"/>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="" supplier="_HkackP1yEeOFY93jb2lkbw" xmi:id="862446b1-f911-4536-826d-714bc22acca2" xmi:type="uml:Dependency"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="" supplier="_risp0P1nEeOFY93jb2lkbw" xmi:id="0212a32a-ea72-4ab3-b793-289f17c0dc76" xmi:type="uml:Dependency"/>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="" supplier="_aIplEP14EeOFY93jb2lkbw" xmi:id="4b77eb13-1e9f-421d-ba94-556a60d03920" xmi:type="uml:Dependency"/>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="" supplier="_5rcaQP10EeOFY93jb2lkbw" xmi:id="a6347616-3305-45e4-b77b-e1b09c05f331" xmi:type="uml:Dependency"/>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="" supplier="_E31PoP10EeOFY93jb2lkbw" xmi:id="aac83270-db00-4625-aae6-a900425a431f" xmi:type="uml:Dependency"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="" supplier="_umF5oP14EeOFY93jb2lkbw" xmi:id="9eee0b8a-56d7-454e-a39a-31b83045b904" xmi:type="uml:Dependency"/>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="" supplier="_gXk-wP1zEeOFY93jb2lkbw" xmi:id="3a7c6454-e246-4704-986e-f03b0a1965ae" xmi:type="uml:Dependency"/>
+    <packagedElement client="_5fqM8GavEeS5PLUVl44fEg" name="" supplier="_7rQ3kP1hEeOFY93jb2lkbw" xmi:id="7ffefd6a-8a95-483c-a7c7-ae581d5d23d6" xmi:type="uml:Dependency"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="" supplier="_cUPPsP10EeOFY93jb2lkbw" xmi:id="6ee123ae-044d-4961-a64f-e0b3ab6010f5" xmi:type="uml:Dependency"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="Realization4" supplier="_aIplEP14EeOFY93jb2lkbw" xmi:id="66285a8c-684e-4ebb-98b8-df3017ae0718" xmi:type="uml:Realization"/>
+    <packagedElement client="_GdijMGaxEeS5PLUVl44fEg" name="Realization1" supplier="_0LR08P2CEeOFY93jb2lkbw" xmi:id="a17c41cf-ef6d-43ba-bac3-ab58ab599708" xmi:type="uml:Realization"/>
+    <packagedElement client="_-ZXnIP1iEeOFY93jb2lkbw" name="Realization1" supplier="_7rQ3kP1hEeOFY93jb2lkbw" xmi:id="bacf75f2-e4f3-4d15-9e5d-e15f4782a6d8" xmi:type="uml:Realization"/>
+    <packagedElement client="_5fqM8GavEeS5PLUVl44fEg" name="Realization2" supplier="_yru4IP1eEeOFY93jb2lkbw" xmi:id="666197b6-0bf6-40dc-a61f-a1acaca89d31" xmi:type="uml:Realization"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="Realization6" supplier="_gXk-wP1zEeOFY93jb2lkbw" xmi:id="4c9e45e3-5d78-413a-8473-1fefd55e26c7" xmi:type="uml:Realization"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="Realization1" supplier="_xsQJYP1kEeOFY93jb2lkbw" xmi:id="c2e41552-2147-4c54-88e3-ec96685bb8b0" xmi:type="uml:Realization"/>
+    <packagedElement client="_nP_soGaxEeS5PLUVl44fEg" name="Realization1" supplier="_8gP70P2CEeOFY93jb2lkbw" xmi:id="8b9b9895-2451-4137-95ae-125c611f75c5" xmi:type="uml:Realization"/>
+    <packagedElement client="_Lfm8QP1xEeOFY93jb2lkbw" name="Realization1" supplier="_cUPPsP10EeOFY93jb2lkbw" xmi:id="c757afcf-bf95-4b45-bc66-449e29b8f752" xmi:type="uml:Realization"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="Realization7" supplier="_HkackP1yEeOFY93jb2lkbw" xmi:id="9cf8c29b-8b3f-4c1b-8a80-9e07455333f8" xmi:type="uml:Realization"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="Realization2" supplier="_O41P8P1zEeOFY93jb2lkbw" xmi:id="6945c17c-9e93-4e66-a326-21616ec4896a" xmi:type="uml:Realization"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="Realization3" supplier="_E31PoP10EeOFY93jb2lkbw" xmi:id="e359245c-4a63-4da6-b48c-a573089aedc1" xmi:type="uml:Realization"/>
+    <packagedElement client="_HvV3YGazEeS5PLUVl44fEg" name="Realization5" supplier="_5rcaQP10EeOFY93jb2lkbw" xmi:id="56cba69f-85f9-4bd9-8ad3-e0d275811891" xmi:type="uml:Realization"/>
+    <packagedElement client="_xFubQP1sEeOFY93jb2lkbw" name="" supplier="6363fac7-959f-47ed-b048-ee705177470f" xmi:id="2e388600-ba04-45e7-ac23-47490ca8392a" xmi:type="uml:Realization"/>
+    <packagedElement client="_5fqM8GavEeS5PLUVl44fEg" name="" supplier="64a01763-8429-434b-8ca4-fab29c2728b2" xmi:id="ac013b09-48bc-4888-bbf2-2d45096f1d4d" xmi:type="uml:Realization"/>
+    <packagedElement client="_em2IUP1wEeOFY93jb2lkbw" name="" supplier="_7rQ3kP1hEeOFY93jb2lkbw" xmi:id="aeec6849-5534-417f-ba1d-52789a553435" xmi:type="uml:Realization"/>
+    <ownedComment xmi:id="2c3f1bb4-bd8a-4ade-9406-6e5e7fe4b73e">
+      <body/>
+    </ownedComment>
+    <ownedComment xmi:id="14860dde-dc53-4422-89be-bad87f4a5926">
+      <body/>
+    </ownedComment>
+    <ownedComment xmi:id="7793266d-2211-49fb-9b96-d3d679606a08">
+      <body/>
+    </ownedComment>
+    <ownedComment xmi:id="74948bf4-ef26-4e95-91fb-526c0637cede">
+      <body/>
+    </ownedComment>
+    <ownedComment xmi:id="b8c29dea-6be3-4e0b-9ed7-a30e957fe3e1">
+      <body/>
+    </ownedComment>
+  </uml:Model>
+<concerns:Photo base_Class="_RwI8oP1lEeOFY93jb2lkbw" xmi:id="349c4b95-7fb3-426b-a87c-1f5a817a9928"/>
+  <concerns:Photo base_Class="25e30ab2-e1f5-4508-a4b9-ae38e5b653e5" xmi:id="2dd1e20b-88de-4964-8a4d-54233cfb9783"/>
+  <concerns:Photo base_Class="_qsjSsP1sEeOFY93jb2lkbw" xmi:id="8f6bb12d-a087-4070-8bf3-ba0b6873ccdb"/>
+  <concerns:ViewPlayMedia base_Class="_qsjSsP1sEeOFY93jb2lkbw" xmi:id="9352186d-0f52-41ef-92e4-e903eb85bd54"/>
+  <smarty:alternative_OR base_Class="_RwI8oP1lEeOFY93jb2lkbw" rootVP="Media" variabilities="ManagingMedia, ViewPlayMedia" xmi:id="c1dc59b2-a73a-4081-a77e-596939521298"/>
+  <concerns:AlbumManagement base_Class="_5fqM8GavEeS5PLUVl44fEg" xmi:id="52143324-f3d0-45ce-b461-2a717579b809"/>
+  <smarty:variationPoint base_Class="_RIjNoP1kEeOFY93jb2lkbw" bindingTime="DESIGN_TIME" numberOfVariants="3" variabilities="ViewPlayMedia, ManagingMedia" variants="Photo, Music, Video" xmi:id="6fccb34f-878c-4ec4-bc17-82d70a701813"/>
+  <concerns:Create_Delete base_Class="_RIjNoP1kEeOFY93jb2lkbw" xmi:id="c16b5772-b6a6-43ee-b7f8-f4c1a5ce1f79"/>
+  <concerns:Create_Delete base_Class="ba7e61dc-fc39-4429-b9b3-4eb5fcc66f3c" xmi:id="524a7c05-f17e-4022-a85d-d74c1f97b169"/>
+  <concerns:Create_Delete base_Class="a9fe38d9-3b32-4932-a942-760dbf871e42" xmi:id="3e879213-c9f7-43a9-a5c6-1e684e97c65f"/>
+  <concerns:Create_Delete base_Class="77c7752d-3cec-4aaa-baca-009705d9292e" xmi:id="6c98a504-9887-4dcf-b95f-643e97c67df1"/>
+  <concerns:LabelMedia base_Class="bee4bf2a-a787-4955-8369-db16cc464919" xmi:id="6a76a93d-33d5-48ca-9701-a07b133fc4de"/>
+  <concerns:Create_Delete base_Class="233d02b8-4ad6-418b-9783-724f1624bd82" xmi:id="792841e0-291b-4fc1-b130-ac3f57faaf3a"/>
+  <concerns:Create_Delete base_Class="_WEzBAP1rEeOFY93jb2lkbw" xmi:id="3d0ba931-1377-45df-81ad-6487f89739d8"/>
+  <concerns:CopyMedia base_Class="_f4E48P1rEeOFY93jb2lkbw" xmi:id="33ae7bcf-b61e-49ef-99bf-eeb0052d5103"/>
+  <concerns:ViewPlayMedia base_Class="_cYbiQP1rEeOFY93jb2lkbw" xmi:id="bd24030c-bd78-4ef9-8ea4-1d248e0f0970"/>
+  <concerns:Favourites base_Class="_hha1UP1rEeOFY93jb2lkbw" xmi:id="b15ff3cb-084a-4626-9483-77173abfbbca"/>
+  <concerns:Create_Delete base_Class="_Wu4f0P1rEeOFY93jb2lkbw" xmi:id="45fc5a02-4116-4aa6-878d-60a4166351bc"/>
+  <concerns:LabelMedia base_Class="_griWMP1rEeOFY93jb2lkbw" xmi:id="3a543aed-70dc-41d0-853e-b26030c60251"/>
+  <concerns:ViewPlayMedia base_Class="_Xg6ZsP1rEeOFY93jb2lkbw" xmi:id="116e0b9f-3d7d-4a07-bcb1-8e98282c5976"/>
+  <concerns:Media base_Class="_Xg6ZsP1rEeOFY93jb2lkbw" xmi:id="49b5a81f-bd3d-45bc-9786-e45cb7407781"/>
+  <smarty:mandatory base_Class="_RIjNoP1kEeOFY93jb2lkbw" rootVP="Media" variabilities="SMSTransfer, Favourites, LabelMedia" xmi:id="aef32504-a7e2-4add-85c5-5346fb3c6126"/>
+  <concerns:LinkMedia base_Class="_t6VLwGazEeS5PLUVl44fEg" xmi:id="dcb47dd4-0b73-4a82-9ae2-7b9df1b4b29e"/>
+  <concerns:Create_Delete base_Class="_fC0k8GazEeS5PLUVl44fEg" xmi:id="813cb826-7ce8-4240-8b5e-d831d6e908dc"/>
+  <concerns:SMSTransfer base_Class="_l3bsUGazEeS5PLUVl44fEg" xmi:id="aa9e448a-28d7-4dbb-81b0-63cde6d6b0e0"/>
+  <concerns:LabelMedia base_Class="_oR0rIGazEeS5PLUVl44fEg" xmi:id="4f105616-4f38-46a7-8503-2fb7fc4d722a"/>
+  <concerns:ViewPlayMedia base_Class="_rsvS0GazEeS5PLUVl44fEg" xmi:id="b7478f92-f2bb-4fed-bde1-965d63e4e0f6"/>
+  <concerns:ViewPlayMedia base_Class="_glWusGazEeS5PLUVl44fEg" xmi:id="22ce13a6-3f30-4ad0-b8ef-5dca9b82138d"/>
+  <concerns:Favourites base_Class="_wfugsGazEeS5PLUVl44fEg" xmi:id="ddcecd7d-3a02-4027-b1f8-3b3e6155adbd"/>
+  <concerns:Create_Delete base_Class="91643e79-a240-4e73-b23c-08f96594572f" xmi:id="30eed28e-3b20-44c5-b6f4-355c58b8b446"/>
+  <concerns:Create_Delete base_Class="_-7XqgP1uEeOFY93jb2lkbw" xmi:id="0fbc63e6-a78a-4a21-9a1b-958375803d9c"/>
+  <concerns:Music base_Class="759deb67-2ec9-4c2c-982b-598106c16807" xmi:id="2da58b67-4386-40bc-b7f3-a58691d42071"/>
+  <concerns:Music base_Class="_RqKr8P1vEeOFY93jb2lkbw" xmi:id="14682726-59b6-4d1e-8691-5d6b1f3a65eb"/>
+  <concerns:Music base_Class="_Oung0P1vEeOFY93jb2lkbw" xmi:id="9dbb59c2-850c-4e40-b530-1f3412cdaab8"/>
+  <concerns:Photo base_Class="21e59a32-65a0-459e-86e7-ae0c80853ebf" xmi:id="dd1fb2d6-6cfc-49c7-b41b-91232a4a8d71"/>
+  <concerns:Photo base_Class="_STadQP1vEeOFY93jb2lkbw" xmi:id="09b66e15-8a53-4d68-8a2f-b7298d2c0529"/>
+  <concerns:Photo base_Class="_TRFmcP1vEeOFY93jb2lkbw" xmi:id="5aad3ca6-a363-42a3-931d-5c8e632be088"/>
+  <concerns:LinkMedia base_Class="_Lfm8QP1xEeOFY93jb2lkbw" xmi:id="785c870b-fecf-4616-b0f8-23ae09add734"/>
+  <concerns:LinkMedia base_Class="_SnGjYP1xEeOFY93jb2lkbw" xmi:id="8a2217e5-6b56-469e-a4e0-c464b2bca371"/>
+  <concerns:LinkMedia base_Class="_QLmxUP1xEeOFY93jb2lkbw" xmi:id="e49efa1b-ab13-44a7-8a2c-e4337971725f"/>
+  <concerns:LinkMedia base_Class="_RBeCUP1xEeOFY93jb2lkbw" xmi:id="78b1fc53-6e9a-4c1a-9920-c143be018da4"/>
+  <concerns:Music base_Class="_RQFjkP1lEeOFY93jb2lkbw" xmi:id="a7cd44ad-a41c-4e0f-95a9-6bedf13c928d"/>
+  <concerns:Music base_Class="8c4ccd5f-c2c1-4b6d-9def-7bc2ef470b87" xmi:id="f7d0934d-8a72-4b8f-b936-73bc5627cfd8"/>
+  <concerns:Music base_Class="_gVqXYP1sEeOFY93jb2lkbw" xmi:id="95863e12-5449-43b1-9a3f-861de850ce49"/>
+  <concerns:ViewPlayMedia base_Class="_gVqXYP1sEeOFY93jb2lkbw" xmi:id="60deaeae-d712-4b86-a8f5-8d07581e27e0"/>
+  <smarty:alternative_OR base_Class="_RQFjkP1lEeOFY93jb2lkbw" rootVP="Media" variabilities="ManagingMedia, ViewPlayMedia" xmi:id="5f34fc23-d419-42f8-8790-a7b5f138d5c7"/>
+  <concerns:ViewPlayMedia base_Class="_xFubQP1sEeOFY93jb2lkbw" xmi:id="e8203029-0891-41f6-b916-d20209ed7a53"/>
+  <concerns:ViewPlayMedia base_Class="_FaMvIP1vEeOFY93jb2lkbw" xmi:id="7697cae9-99c2-41fd-baac-d031f4e1043d"/>
+  <concerns:ViewPlayMedia base_Class="_IwCpkP1vEeOFY93jb2lkbw" xmi:id="8ee80162-9aa2-4bd8-846b-2e502e118d9f"/>
+  <concerns:MM base_Class="_fuJHkP1wEeOFY93jb2lkbw" xmi:id="fa273f01-53f5-499b-885a-eca8247eb895"/>
+  <concerns:MM base_Class="b9acd519-256a-40c1-9c33-baddd3546351" xmi:id="cd6c05f1-ba23-450d-867a-32d29a1bfc69"/>
+  <concerns:MM base_Class="518f364a-b9e6-4090-879a-aa2b12abf021" xmi:id="4fe18d00-37ff-4aaa-91bf-5c821f72e81a"/>
+  <concerns:MM base_Class="_98SMEP1uEeOFY93jb2lkbw" xmi:id="2f546e29-2c44-4936-a542-c40a767e670d"/>
+  <concerns:MM base_Class="_nOLKgP1wEeOFY93jb2lkbw" xmi:id="508ce4a7-5d17-42d1-a93d-e3a72316f5ca"/>
+  <concerns:MM base_Class="_mQFxoP1wEeOFY93jb2lkbw" xmi:id="1998d2c5-545b-4724-8081-c1d41eb2e50b"/>
+  <concerns:GUI base_Class="_nP_soGaxEeS5PLUVl44fEg" xmi:id="2740a948-8b6b-4a86-9b96-781a0db060b0"/>
+  <concerns:Video base_Class="_SnyWUP1lEeOFY93jb2lkbw" xmi:id="86c2b5fc-0852-4658-a364-02fb774a95f8"/>
+  <concerns:Video base_Class="64d78f99-11eb-4211-961a-cb8d954a5608" xmi:id="8877ce4d-99cd-4219-b34d-8dcb16ae667d"/>
+  <concerns:Video base_Class="_TeIrUP1sEeOFY93jb2lkbw" xmi:id="eea438fe-cd45-4f4e-b8aa-7c2f3458eeec"/>
+  <concerns:ViewPlayMedia base_Class="_TeIrUP1sEeOFY93jb2lkbw" xmi:id="42d2914a-7aeb-489c-88fb-a49147c88797"/>
+  <smarty:alternative_OR base_Class="_SnyWUP1lEeOFY93jb2lkbw" rootVP="Media" variabilities="ManagingMedia, ViewPlayMedia" xmi:id="1085f320-3683-4217-9748-7c81e56509c6"/>
+  <concerns:LinkMedia base_Class="_ZPyHkP1xEeOFY93jb2lkbw" xmi:id="38841143-241a-4e11-8458-46cc96d82198"/>
+  <concerns:LinkMedia base_Class="3119e32b-f906-4679-b20e-740910756a70" xmi:id="f62a0230-b258-475c-af07-b5380ece5300"/>
+  <concerns:LinkMedia base_Class="358bdecb-c79f-4803-8b1f-39cd4715b72f" xmi:id="b023bfae-e75d-42cd-a0cd-fe9a7d03a34c"/>
+  <concerns:LinkMedia base_Class="_jnKyIP1xEeOFY93jb2lkbw" xmi:id="943d893c-04c0-487f-9b72-1dc1b12d9f8c"/>
+  <concerns:LinkMedia base_Class="_jAZGAP1xEeOFY93jb2lkbw" xmi:id="78af9e4a-98ed-4376-b485-a83db12b52dc"/>
+  <concerns:LinkMedia base_Class="_m2aVUP1xEeOFY93jb2lkbw" xmi:id="7866a8f0-ccf4-40b6-8fa4-c5cebbe9d1b9"/>
+  <concerns:LinkMedia base_Class="_oMpvgP1xEeOFY93jb2lkbw" xmi:id="594574b0-79a0-413e-a4d7-9e402959895f"/>
+  <smarty:optional base_Class="_ZPyHkP1xEeOFY93jb2lkbw" rootVP="Entry" variabilities="CustomizingMedia, LinkingMedia" xmi:id="9634ee08-3f9b-434f-8b6d-98af45a2c41e"/>
+  <concerns:LabelMedia base_Class="74d4fbea-c2c5-48b8-85e6-e48c43a5c8e6" xmi:id="e8963538-6770-4418-a076-25fd80580993"/>
+  <concerns:LabelMedia base_Class="_D6aXYP1vEeOFY93jb2lkbw" xmi:id="fa570434-28e8-4844-8fe4-31a4efa23a90"/>
+  <concerns:LabelMedia base_Class="_BDwTUP1vEeOFY93jb2lkbw" xmi:id="966b5d4d-e3b3-46ab-ba95-88484b1d80cb"/>
+  <concerns:AlbumManagement base_Class="_-ZXnIP1iEeOFY93jb2lkbw" xmi:id="63653574-403c-4ed1-bf13-4b1181d1c820"/>
+  <concerns:AlbumManagement base_Class="08725784-da9f-4340-9666-f89120cdbb8e" xmi:id="5a1750ea-73e7-4511-a6ac-47bd1f083e17"/>
+  <concerns:AlbumManagement base_Class="_fnTLoP1jEeOFY93jb2lkbw" xmi:id="49e64083-b9a5-4db0-b067-6dd477e6956b"/>
+  <concerns:AlbumManagement base_Class="_fnMd8P1jEeOFY93jb2lkbw" xmi:id="184cdac0-1432-458f-a75b-03235f5d530f"/>
+  <concerns:AlbumManagement base_Class="_fnRWcP1jEeOFY93jb2lkbw" xmi:id="e8fd5d5e-b8aa-487f-8e1a-87e2a66bba6a"/>
+  <concerns:AlbumManagement base_Class="_fnR9hf1jEeOFY93jb2lkbw" xmi:id="3b89d257-04d3-476b-9d45-07580c0d1a42"/>
+  <concerns:AlbumManagement base_Class="_fnSkkP1jEeOFY93jb2lkbw" xmi:id="6987c4c2-4150-489d-b312-99be973fdffc"/>
+  <concerns:AlbumManagement base_Class="_fnQvYP1jEeOFY93jb2lkbw" xmi:id="2687f108-8c53-4518-8f50-c8f5285737c2"/>
+  <concerns:AlbumManagement base_Class="_fnR9gv1jEeOFY93jb2lkbw" xmi:id="7cfe5573-2284-4ded-a683-e7cc482c13f3"/>
+  <concerns:Video base_Class="71893b4a-0ee7-4f57-b6f3-2588c3334b9c" xmi:id="84432b65-7f49-489f-a3d4-eb6091151040"/>
+  <concerns:Video base_Class="_MoN1AP1vEeOFY93jb2lkbw" xmi:id="cad85431-6a8e-4064-a77c-84d60498e2b4"/>
+  <concerns:Video base_Class="_KthC4P1vEeOFY93jb2lkbw" xmi:id="cb725ed7-41a3-40df-a9ea-550fe36ada83"/>
+  <concerns:Favourites base_Class="167bfc97-1921-4246-ad22-234b45f990cf" xmi:id="cd0de0e8-f281-48e9-a4be-8d67be7f762b"/>
+  <concerns:Favourites base_Class="_G3biIP1vEeOFY93jb2lkbw" xmi:id="bc96900f-f21e-4cd6-8981-bf964639972b"/>
+  <concerns:Favourites base_Class="__41_YP1uEeOFY93jb2lkbw" xmi:id="428e350d-3e73-4406-9322-6bc9bff39e4b"/>
+  <concerns:AlbumManagement base_Class="_GdijMGaxEeS5PLUVl44fEg" xmi:id="68a3b1f2-6bdc-42c5-b7c6-4733b0ed5898"/>
+  <concerns:GUI base_Class="_GdijMGaxEeS5PLUVl44fEg" xmi:id="4946273e-4b17-47a5-bcf7-0ea7c3167961"/>
+  <concerns:MM base_Class="_em2IUP1wEeOFY93jb2lkbw" xmi:id="15e6d718-62cc-4b13-a73f-b1f55c7c192b"/>
+  <concerns:MM base_Class="_DJSKgP1xEeOFY93jb2lkbw" xmi:id="52d029fa-3e7a-468f-8f3e-542a360afbd7"/>
+  <smarty:interface base_Class="_0LR08P2CEeOFY93jb2lkbw" xmi:id="52b06655-ce93-4034-8858-b77adc1e7f8e"/>
+  <smarty:interface base_Class="4ae36cc7-25b6-4cef-8a01-baf4fcd8002d" xmi:id="775165a9-0e21-4d88-ba0f-fcd2a20c3f8d"/>
+  <smarty:interface base_Class="_O41P8P1zEeOFY93jb2lkbw" xmi:id="05de3305-c229-472a-8c54-5d27869cc7ae"/>
+  <smarty:interface base_Class="_cUPPsP10EeOFY93jb2lkbw" xmi:id="a5e308d4-9373-4052-8259-9969cb7fb0e9"/>
+  <smarty:interface base_Class="_xsQJYP1kEeOFY93jb2lkbw" xmi:id="1009b0d0-0e79-41d6-b3b2-f773b5bca253"/>
+  <smarty:interface base_Class="_HkackP1yEeOFY93jb2lkbw" xmi:id="13053d9c-2f43-4f68-a8ed-dfd528231f53"/>
+  <smarty:interface base_Class="_E31PoP10EeOFY93jb2lkbw" xmi:id="318f93bd-8887-43aa-b2d3-c5a33972571d"/>
+  <smarty:interface base_Class="6363fac7-959f-47ed-b048-ee705177470f" xmi:id="e98bb254-67c8-4cc3-8348-12d09c659ae2"/>
+  <smarty:interface base_Class="_5rcaQP10EeOFY93jb2lkbw" xmi:id="14f0f64f-1d49-4044-b8fc-9cfc47bc1886"/>
+  <smarty:interface base_Class="_gXk-wP1zEeOFY93jb2lkbw" xmi:id="dc9ce987-d7fd-45d3-ab8a-9c4e13b00d56"/>
+  <smarty:interface base_Class="c1c477d9-f9d1-4d86-870f-732fff94edb1" xmi:id="427c96cf-4007-4a49-9f64-cbdfb77e51e7"/>
+  <smarty:interface base_Class="_aIplEP14EeOFY93jb2lkbw" xmi:id="4e810b86-bcdd-44f1-8f78-b1c737b690fc"/>
+  <smarty:interface base_Class="ec4adead-6889-4939-b63b-f3898b34414e" xmi:id="0b4e3837-5e2e-4c50-8df8-4698c5207e8f"/>
+  <smarty:interface base_Class="7ba9b33d-e9c5-4fe7-8a57-5b3cb2574d89" xmi:id="6b93fe1c-b887-44ab-bf40-75a6fe41847e"/>
+  <smarty:interface base_Class="_umF5oP14EeOFY93jb2lkbw" xmi:id="483f73b4-7d9e-47c8-ab6e-0e163a14d74a"/>
+  <smarty:interface base_Class="_risp0P1nEeOFY93jb2lkbw" xmi:id="e498e058-b50c-4ba2-93ca-8bb9213e5cac"/>
+  <smarty:interface base_Class="_8gP70P2CEeOFY93jb2lkbw" xmi:id="26ccdc7a-2e91-49bd-93bd-8655c844ab54"/>
+  <smarty:interface base_Class="_Q-ugEP1gEeOFY93jb2lkbw" xmi:id="2031e1b6-e87e-442d-9a83-e8c069b63c12"/>
+  <smarty:interface base_Class="64a01763-8429-434b-8ca4-fab29c2728b2" xmi:id="7c1333f1-6361-4d8d-83a8-a1f2d5e8f725"/>
+  <smarty:interface base_Class="_7rQ3kP1hEeOFY93jb2lkbw" xmi:id="4cba8bb9-2ed3-4e34-9362-3ded31929b8c"/>
+  <smarty:interface base_Class="_yru4IP1eEeOFY93jb2lkbw" xmi:id="007031d2-791c-4a51-ba2d-f5954df09a14"/>
+  <smarty:interface base_Class="85ba4499-cd9c-49ba-a9f2-0a33ae0fe44b" xmi:id="1980d518-de71-476e-b466-63fbd1830a97"/>
+  <smarty:interface base_Class="c00a0227-eae2-41e8-a49f-a7997060a9c5" xmi:id="fdc30420-124e-4a1d-99e9-5238c21139ba"/>
+  <concerns:AlbumManagement base_Class="_0LR08P2CEeOFY93jb2lkbw" xmi:id="89442aac-7f02-436d-b086-7fb39cb9d956"/>
+  <concerns:GUI base_Class="_0LR08P2CEeOFY93jb2lkbw" xmi:id="97579db9-0325-4266-889b-b8bbbcf9ff18"/>
+  <concerns:SMSTransfer base_Class="_UHpfMP1oEeOFY93jb2lkbw" xmi:id="5c6d2d10-4e2b-475b-8491-27996bef7668"/>
+  <concerns:SMSTransfer base_Class="_VIq3UP1oEeOFY93jb2lkbw" xmi:id="0c651a51-cae2-44a0-b315-412b7a0327ee"/>
+  <concerns:SMSTransfer base_Class="4ae36cc7-25b6-4cef-8a01-baf4fcd8002d" xmi:id="a8765af1-3a28-4969-a61a-f3ae99aeff6d"/>
+  <concerns:SMSTransfer base_Class="_SOC4QP1zEeOFY93jb2lkbw" xmi:id="806d2842-0b3b-4510-80c3-9176b0632306"/>
+  <concerns:SMSTransfer base_Class="_TTh5oP1zEeOFY93jb2lkbw" xmi:id="81b4ec2a-13e5-40ef-bb0c-ab567efd3031"/>
+  <concerns:SMSTransfer base_Class="_VhAd0P1zEeOFY93jb2lkbw" xmi:id="f6a45394-2c53-4165-9d6d-aebb7a54c781"/>
+  <concerns:SMSTransfer base_Class="_UD5moP1zEeOFY93jb2lkbw" xmi:id="649c0831-5a39-455f-bff9-039a278ace1c"/>
+  <concerns:SMSTransfer base_Class="_O41P8P1zEeOFY93jb2lkbw" xmi:id="13815e36-1443-4b36-aa01-871c75b0308c"/>
+  <concerns:LinkMedia base_Class="_i1v04P10EeOFY93jb2lkbw" xmi:id="0b0b3334-e1b8-402b-b428-5c69eb7d67d4"/>
+  <concerns:LinkMedia base_Class="_m0Y0sP10EeOFY93jb2lkbw" xmi:id="07fa315b-0d32-43e3-96a7-1af41f8114e5"/>
+  <concerns:LinkMedia base_Class="_lwKXkP10EeOFY93jb2lkbw" xmi:id="236eb555-f466-4229-afd1-bf10b879fd51"/>
+  <concerns:LinkMedia base_Class="_oDoPAP10EeOFY93jb2lkbw" xmi:id="d9a9411a-f256-42b9-af83-60555ba40bc8"/>
+  <concerns:LinkMedia base_Class="_jpBE4P10EeOFY93jb2lkbw" xmi:id="d179f136-16d6-46a3-a8f5-30d16dc4a86e"/>
+  <concerns:LinkMedia base_Class="_cUPPsP10EeOFY93jb2lkbw" xmi:id="2edbf7a6-83a6-410a-97ea-2c0c0a0bc4ea"/>
+  <concerns:Music base_Class="_L8zPkP1mEeOFY93jb2lkbw" xmi:id="41c7ae78-5be9-424c-9c0e-380c996d5473"/>
+  <concerns:ViewPlayMedia base_Class="_Qrkr0P1mEeOFY93jb2lkbw" xmi:id="16d4e800-99a3-4f4c-9f75-77220d421c4a"/>
+  <concerns:Create_Delete base_Class="_CL-OsP1mEeOFY93jb2lkbw" xmi:id="35947af0-17db-45ee-9cc8-314894647491"/>
+  <concerns:Create_Delete base_Class="_GhsRwP1mEeOFY93jb2lkbw" xmi:id="676dbfd4-c8be-4ec1-89b7-31da90e46c40"/>
+  <concerns:MM base_Class="_AoiGAP1mEeOFY93jb2lkbw" xmi:id="27fabd87-0b18-4463-87d0-ae91fa7c8cc3"/>
+  <concerns:ViewPlayMedia base_Class="_RndsUP1mEeOFY93jb2lkbw" xmi:id="d217ee5f-594f-4263-883e-747a0da0f2db"/>
+  <concerns:ViewPlayMedia base_Class="_J8NQ0P1mEeOFY93jb2lkbw" xmi:id="7c02a6f6-09c7-4506-bc82-0b90fec9d8bb"/>
+  <concerns:Create_Delete base_Class="_7_7jMP1lEeOFY93jb2lkbw" xmi:id="2f5fb765-6688-44e2-bfa3-0dfd0cbef72f"/>
+  <concerns:Create_Delete base_Class="_OMokMP1mEeOFY93jb2lkbw" xmi:id="2aaeb4d7-b221-44b6-80a2-238e47102207"/>
+  <concerns:ViewPlayMedia base_Class="_E_rFYP1mEeOFY93jb2lkbw" xmi:id="693dcd94-5e79-4f36-97e0-58a2e320f356"/>
+  <concerns:ViewPlayMedia base_Class="_EE7UYP1mEeOFY93jb2lkbw" xmi:id="02810f0e-2da9-4111-82f9-b45e405ebd75"/>
+  <concerns:Create_Delete base_Class="_JKticP1mEeOFY93jb2lkbw" xmi:id="8b4fe016-447b-4605-b56c-32ea9fb9e509"/>
+  <concerns:ViewPlayMedia base_Class="_K7p7oP1mEeOFY93jb2lkbw" xmi:id="5e8f4ac7-7956-4b46-a2c0-684a87838c82"/>
+  <concerns:Create_Delete base_Class="_PdZBcP1mEeOFY93jb2lkbw" xmi:id="9269409d-3b67-4817-b175-25f2aa982348"/>
+  <concerns:Photo base_Class="_DKDAgP1mEeOFY93jb2lkbw" xmi:id="b6de618d-35a4-4c10-88e9-cc372a9e90a1"/>
+  <concerns:Create_Delete base_Class="__o_7oP1lEeOFY93jb2lkbw" xmi:id="5d7d20c5-262b-47a1-941e-e97ab4a75f45"/>
+  <concerns:Create_Delete base_Class="_xsQJYP1kEeOFY93jb2lkbw" xmi:id="621c3481-9a10-40e5-9afd-11efc55bc3dd"/>
+  <concerns:ViewPlayMedia base_Class="_NtdecP1yEeOFY93jb2lkbw" xmi:id="c1f84859-7c39-4286-a9e2-00b422dd61dc"/>
+  <concerns:ViewPlayMedia base_Class="_MFxH4P1yEeOFY93jb2lkbw" xmi:id="890e0f29-5b6d-445e-abcb-4cd0f5cd43d3"/>
+  <concerns:ViewPlayMedia base_Class="_M8acAP1yEeOFY93jb2lkbw" xmi:id="ec622152-943a-485f-b3f8-6e611385272c"/>
+  <concerns:ViewPlayMedia base_Class="_HkackP1yEeOFY93jb2lkbw" xmi:id="50c2696a-1368-4853-a9d9-441ee3715a08"/>
+  <concerns:ViewPlayMedia base_Class="_IujCgP10EeOFY93jb2lkbw" xmi:id="75b8ee6a-e3b4-424a-81f8-103bcba070c5"/>
+  <concerns:ViewPlayMedia base_Class="_K4RvIP10EeOFY93jb2lkbw" xmi:id="5481995b-f870-4bb0-89e4-ae49ee53f862"/>
+  <concerns:ViewPlayMedia base_Class="_Jr9tAP10EeOFY93jb2lkbw" xmi:id="0c87f48b-bd07-4d8c-894c-3a67fb15bf86"/>
+  <concerns:ViewPlayMedia base_Class="_E31PoP10EeOFY93jb2lkbw" xmi:id="d08f8a70-4d93-4b5a-bbdb-0b8143566b31"/>
+  <concerns:Create_Delete base_Class="_uwYt0P1nEeOFY93jb2lkbw" xmi:id="1bef3b6a-05d2-42b1-b332-86ddf510db7f"/>
+  <concerns:Create_Delete base_Class="_v3Vu0P1nEeOFY93jb2lkbw" xmi:id="0e2970f6-7307-45f8-b458-b1e446fcc225"/>
+  <concerns:Create_Delete base_Class="_8h8ZMP1nEeOFY93jb2lkbw" xmi:id="e0346703-0f56-426c-960d-93d3c81bc58f"/>
+  <concerns:CopyMedia base_Class="_2WuNEP1nEeOFY93jb2lkbw" xmi:id="8e001610-bc38-4099-b770-86ec36568b11"/>
+  <concerns:Create_Delete base_Class="6363fac7-959f-47ed-b048-ee705177470f" xmi:id="a06ca2ba-9d9a-4dc4-9488-4f9e9af13553"/>
+  <concerns:LinkMedia base_Class="_94XtsP10EeOFY93jb2lkbw" xmi:id="25ef4e06-44b3-4c94-bec8-cfa36b9c67f5"/>
+  <concerns:LinkMedia base_Class="_BJFQgP11EeOFY93jb2lkbw" xmi:id="7eef81fa-ae5e-4602-adfb-9a86afa4de62"/>
+  <concerns:LinkMedia base_Class="__CZ34P10EeOFY93jb2lkbw" xmi:id="9e10533f-436d-4691-a897-5e01872e5a6b"/>
+  <concerns:LinkMedia base_Class="__0Jd4P10EeOFY93jb2lkbw" xmi:id="597e7b77-8b66-4603-ad77-b98a1cb55983"/>
+  <concerns:LinkMedia base_Class="_5rcaQP10EeOFY93jb2lkbw" xmi:id="06598116-cab8-4f97-9919-989a7fc3a6bb"/>
+  <concerns:LabelMedia base_Class="_uWTjcP1zEeOFY93jb2lkbw" xmi:id="aa879a65-4059-4162-9fd4-be611fd7525b"/>
+  <concerns:LabelMedia base_Class="_tItu8P1zEeOFY93jb2lkbw" xmi:id="5fd163d6-8020-409b-8140-4cd65a4e6750"/>
+  <concerns:LabelMedia base_Class="_wMpaAP1zEeOFY93jb2lkbw" xmi:id="aa55adaf-04ad-4aa0-b712-35c5e1f69ba2"/>
+  <concerns:LabelMedia base_Class="_l5XMUP1zEeOFY93jb2lkbw" xmi:id="5394e675-abae-4dc8-8b35-b368123e93af"/>
+  <concerns:LabelMedia base_Class="_gXk-wP1zEeOFY93jb2lkbw" xmi:id="fd35e9fa-2826-4146-84d6-33b3919ea178"/>
+  <concerns:LabelMedia base_Class="_5POEMP1nEeOFY93jb2lkbw" xmi:id="8ee58f27-b9d8-4fc1-a03c-ab4d8389adc4"/>
+  <concerns:LabelMedia base_Class="_4szToP1nEeOFY93jb2lkbw" xmi:id="6f8e17ac-2cab-486f-95f7-4abd74458eba"/>
+  <concerns:LabelMedia base_Class="_30ZsAP1nEeOFY93jb2lkbw" xmi:id="e53c56e3-4434-413a-bf85-8039e0009e20"/>
+  <concerns:LabelMedia base_Class="c1c477d9-f9d1-4d86-870f-732fff94edb1" xmi:id="8567140c-30a2-4cad-b092-e33f38b6a77e"/>
+  <concerns:Favourites base_Class="_eacKYP14EeOFY93jb2lkbw" xmi:id="d1d2cb8c-c841-4028-aa34-5aefa4708a92"/>
+  <concerns:Favourites base_Class="_fW2IQP14EeOFY93jb2lkbw" xmi:id="049d2a08-f8c4-4d7e-88e1-e9a4fe67e1ff"/>
+  <concerns:Favourites base_Class="_hD8jQP14EeOFY93jb2lkbw" xmi:id="afd5be79-555e-43d2-a2e3-076da45333a5"/>
+  <concerns:Favourites base_Class="_dEPMcP14EeOFY93jb2lkbw" xmi:id="5928114e-1385-4411-8089-29dfa882de7d"/>
+  <concerns:Favourites base_Class="_aIplEP14EeOFY93jb2lkbw" xmi:id="d0776e65-cbda-42d1-a207-1636e2981a9f"/>
+  <concerns:Video base_Class="_x0zhEP1nEeOFY93jb2lkbw" xmi:id="36053767-4526-47cc-a700-53354a9d2c84"/>
+  <concerns:Video base_Class="ec4adead-6889-4939-b63b-f3898b34414e" xmi:id="f90002b2-53c0-41e8-aa8b-fcf61ab8b6ba"/>
+  <concerns:Favourites base_Class="_6N2PoP1nEeOFY93jb2lkbw" xmi:id="d5414d5e-00db-418a-898b-0b11d1eeb75c"/>
+  <concerns:Favourites base_Class="_yzW0AP1nEeOFY93jb2lkbw" xmi:id="5a235599-cebc-4438-b3e0-782c7da7eca3"/>
+  <concerns:Favourites base_Class="_7a_YMP1nEeOFY93jb2lkbw" xmi:id="6f909f90-06b7-4af8-9ab2-85d254883c1b"/>
+  <concerns:Favourites base_Class="7ba9b33d-e9c5-4fe7-8a57-5b3cb2574d89" xmi:id="05e57958-8da4-49ef-9a95-e1cf808d2919"/>
+  <concerns:MM base_Class="_TAwvoP1oEeOFY93jb2lkbw" xmi:id="fdf12577-8684-4e87-b964-94553cd647f1"/>
+  <concerns:MM base_Class="_umF5oP14EeOFY93jb2lkbw" xmi:id="d1e4c931-e27c-4258-8c51-cef84138b3b4"/>
+  <concerns:ViewPlayMedia base_Class="_risp0P1nEeOFY93jb2lkbw" xmi:id="db8c54f2-001e-4674-a85d-9a236100092b"/>
+  <concerns:GUI base_Class="_8gP70P2CEeOFY93jb2lkbw" xmi:id="a28adbbf-fefd-4215-aa38-07d206ca6820"/>
+  <concerns:AlbumManagement base_Class="_mDlZ8P1gEeOFY93jb2lkbw" xmi:id="155bdfa5-e756-468d-98f8-d7fca82e3a1a"/>
+  <concerns:AlbumManagement base_Class="_oMQWoP1gEeOFY93jb2lkbw" xmi:id="eff96c5e-eddf-47ff-a99f-4077eb489713"/>
+  <concerns:AlbumManagement base_Class="_sRXx4P1gEeOFY93jb2lkbw" xmi:id="21d38237-c10a-4932-83d7-b18037e28491"/>
+  <concerns:AlbumManagement base_Class="_xsc6gP1gEeOFY93jb2lkbw" xmi:id="9170f75a-1d03-4580-a813-e48f9736db38"/>
+  <concerns:AlbumManagement base_Class="_Q-ugEP1gEeOFY93jb2lkbw" xmi:id="6bca188d-106f-46db-84e6-2876bcd909e3"/>
+  <concerns:CopyMedia base_Class="_ym_QIP1gEeOFY93jb2lkbw" xmi:id="5a764bb6-3210-42dd-848f-098f57ec5549"/>
+  <concerns:CopyMedia base_Class="64a01763-8429-434b-8ca4-fab29c2728b2" xmi:id="e22763a3-9dcc-40dd-9f87-f15ba5a71d66"/>
+  <concerns:AlbumManagement base_Class="_LCRd0P1iEeOFY93jb2lkbw" xmi:id="55b01a25-c1cb-4f25-9af6-ae84ace8807b"/>
+  <concerns:AlbumManagement base_Class="_EbAO4P1iEeOFY93jb2lkbw" xmi:id="ffdfef9e-8c91-4161-8c76-0b2ff71bd691"/>
+  <concerns:AlbumManagement base_Class="_Cqc3QP1iEeOFY93jb2lkbw" xmi:id="b23c1603-c828-41c7-9123-7d5a53a27b83"/>
+  <concerns:AlbumManagement base_Class="_KH0nwP1iEeOFY93jb2lkbw" xmi:id="93ae20c5-29d4-4958-bc5f-6f6f7c202ff9"/>
+  <concerns:AlbumManagement base_Class="_B1C5QP1iEeOFY93jb2lkbw" xmi:id="c0621656-a511-4b36-8dda-59bc4a2924bd"/>
+  <concerns:AlbumManagement base_Class="_HjMu4P1iEeOFY93jb2lkbw" xmi:id="a095570a-aa8a-4868-8064-514ecdb61ece"/>
+  <concerns:AlbumManagement base_Class="_JHz8QP1iEeOFY93jb2lkbw" xmi:id="20cfbeec-abee-4620-9db9-eff8db730a5e"/>
+  <concerns:AlbumManagement base_Class="_DlfjMP1iEeOFY93jb2lkbw" xmi:id="b1fcdedf-54ec-4b94-9a30-29371cef0c74"/>
+  <concerns:AlbumManagement base_Class="_BGZDgP1iEeOFY93jb2lkbw" xmi:id="3654ad77-87ee-4050-ba1c-fa493813d798"/>
+  <concerns:AlbumManagement base_Class="_x3IMkP14EeOFY93jb2lkbw" xmi:id="2bf5b932-809b-4869-abd5-50077d5fe3f2"/>
+  <concerns:AlbumManagement base_Class="_7rQ3kP1hEeOFY93jb2lkbw" xmi:id="d65fcecd-6e1a-4df2-8a8e-94ea8b6adc05"/>
+  <concerns:AlbumManagement base_Class="_hyWDsP1fEeOFY93jb2lkbw" xmi:id="d0dc3cc4-10d5-4231-ada9-50ed8997dc29"/>
+  <concerns:AlbumManagement base_Class="_kXb2oP1fEeOFY93jb2lkbw" xmi:id="a82b6a4d-4cdf-426a-82b1-32a469fa9b29"/>
+  <concerns:AlbumManagement base_Class="_lYIeoP1fEeOFY93jb2lkbw" xmi:id="f4e918ee-b837-4ab1-908a-50933f5061c6"/>
+  <concerns:AlbumManagement base_Class="_feX18P1fEeOFY93jb2lkbw" xmi:id="0f9c1993-dd7e-43eb-8a82-e000c0329cd6"/>
+  <concerns:AlbumManagement base_Class="_g5d68P1fEeOFY93jb2lkbw" xmi:id="62c125fb-0768-4c0f-a411-51ffca8df4c3"/>
+  <concerns:AlbumManagement base_Class="_i3HTZP1fEeOFY93jb2lkbw" xmi:id="6844a095-d737-4bbf-8ab3-52f405c7c920"/>
+  <concerns:AlbumManagement base_Class="_yru4IP1eEeOFY93jb2lkbw" xmi:id="7824e218-1dfe-4df0-a27f-6f33bcae10cc"/>
+  <concerns:ViewPlayMedia base_Class="_0cjmcP1nEeOFY93jb2lkbw" xmi:id="3e430e16-38a9-4954-8a97-eb4e549f5265"/>
+  <concerns:ViewPlayMedia base_Class="85ba4499-cd9c-49ba-a9f2-0a33ae0fe44b" xmi:id="2ce69ad7-efec-48dd-b77e-f5fe9619b0c8"/>
+  <concerns:ViewPlayMedia base_Class="_11ZosP1nEeOFY93jb2lkbw" xmi:id="2dcae59f-ee05-4e83-8ebd-9d0636a9eb8f"/>
+  <concerns:ViewPlayMedia base_Class="c00a0227-eae2-41e8-a49f-a7997060a9c5" xmi:id="62a1c569-39e3-412c-9311-9dcd5b325a41"/>
+  <smarty:variability base_Comment="2c3f1bb4-bd8a-4ade-9406-6e5e7fe4b73e" bindingTime="DESIGN_TIME" maxSelection="3" minSelection="1" name="ManagingMedia" variants="Photo, Music, Video" xmi:id="42417023-3f59-4e38-948b-4605c1dec6d7"/>
+  <smarty:variability base_Comment="14860dde-dc53-4422-89be-bad87f4a5926" bindingTime="DESIGN_TIME" maxSelection="1" minSelection="0" name="SMSTransfer" variants="Media" xmi:id="4c55c52d-f85f-4ab4-967c-faf4f3fd4c7f"/>
+  <smarty:variability base_Comment="e17adfd2-bca8-4cc9-a2eb-4ac04c10ea52" bindingTime="DESIGN_TIME" maxSelection="1" minSelection="0" name="CustomizingMedia" variants="Entry" xmi:id="df0c7e71-550c-482b-bc2f-d2442e70da5d"/>
+  <smarty:variability base_Comment="8af75797-d33a-4518-a616-4c3528afa019" bindingTime="DESIGN_TIME" maxSelection="1" minSelection="0" name="LinkingMedia" variants="Entry" xmi:id="e6fecb13-6b21-440f-b737-7d7706918f41"/>
+  <smarty:variability base_Comment="7793266d-2211-49fb-9b96-d3d679606a08" bindingTime="DESIGN_TIME" maxSelection="1" minSelection="0" name="Favourites" variants="Media" xmi:id="324a72b1-56e1-4d95-b27f-d19a9ca35f14"/>
+  <smarty:variability base_Comment="74948bf4-ef26-4e95-91fb-526c0637cede" bindingTime="DESIGN_TIME" maxSelection="1" minSelection="0" name="LabelMedia" variants="Media" xmi:id="e01a39ea-ec52-453c-b1fb-2ee100c54fe4"/>
+  <smarty:variability base_Comment="b8c29dea-6be3-4e0b-9ed7-a30e957fe3e1" bindingTime="DESIGN_TIME" maxSelection="3" minSelection="1" name="ViewPlayMedia" variants="Photo, Video, Music" xmi:id="bc624b45-4e90-4618-a864-3a7b81668e0f"/>
+</xmi:XMI>

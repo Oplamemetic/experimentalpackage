@@ -1,0 +1,26 @@
+Bestof2<-c()
+
+Bestof12<-c()
+
+Genetico<-c()
+
+MM1<-c()
+
+UntilBest<-c()
+
+require('pgirmess')
+AR1 <-cbind(Bestof2, Bestof12, Genetico, MM1, UntilBest)
+result<-friedman.test(AR1)
+result
+
+m<-data.frame(result$statistic,result$p.value)
+write.csv2(m,file="friedman-pvalue-gd-mom.csv")
+
+pos_teste<-friedmanmc(AR1)
+write.csv2(pos_teste,file="friedman-comparacao-gd-mom.csv")
+png(file="friedman-gd-mom.png", width=500, height=500)
+boxplot(Bestof2, Bestof12, Genetico, MM1, UntilBest)
+dev.off()
+
+
+

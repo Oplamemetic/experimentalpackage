@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:concerns="http:///schemas/concerns/_WS20MBwBEeSTB7Ap1MYkfQ/20" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:patterns="http:///schemas/patterns/_wlXX8JVoEeOWwNcokQBARg/3" xmlns:relationships="http:///schemas/relationships/_ZXR5gI9OEeO5S8PTmh49hw/2" xmlns:smarty="http:///schemas/smarty/_cl6_wI9OEeO5S8PTmh49hw/3" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="20110701" xsi:schemaLocation="http:///schemas/patterns/_wlXX8JVoEeOWwNcokQBARg/3 resources/patterns.profile.uml#_wlbCUJVoEeOWwNcokQBARg http:///schemas/concerns/_SsrrUBWgEeObs-pQrJ2skQ/19 resources/concerns.profile.uml#_SsrrURWgEeObs-pQrJ2skQ http:///schemas/relationships/_ZXR5gI9OEeO5S8PTmh49hw/2 resources/relationships.profile.uml#_ZXU80I9OEeO5S8PTmh49hw http:///schemas/smarty/_cl6_wI9OEeO5S8PTmh49hw/3 resources/smarty.profile.uml#_cl7m0I9OEeO5S8PTmh49hw http:///schemas/concerns/_WS20MBwBEeSTB7Ap1MYkfQ/20 resources/concerns.profile.uml#_WS5QcBwBEeSTB7Ap1MYkfQ ">
+  <uml:Model name="model" xmi:id="_xqzHwIzdEeO6Yt6TRR4QNg">
+    <profileApplication xmi:id="_2Q2s4I9OEeO5xq3Ur4qgFw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_2RHyoI9OEeO5xq3Ur4qgFw">
+        <references href="resources/concerns.profile.uml#_WS5QcBwBEeSTB7Ap1MYkfQ" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/concerns.profile.uml#_9v_84HqaEeK1gM_kVgXLQw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_2RXDMI9OEeO5xq3Ur4qgFw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_2RlssI9OEeO5xq3Ur4qgFw">
+        <references href="resources/relationships.profile.uml#_ZXU80I9OEeO5S8PTmh49hw" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/relationships.profile.uml#__hjjkIzaEeO6Yt6TRR4QNg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_2RlssY9OEeO5xq3Ur4qgFw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_2R2ycI9OEeO5xq3Ur4qgFw">
+        <references href="resources/smarty.profile.uml#_cl7m0I9OEeO5S8PTmh49hw" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/smarty.profile.uml#_9ppH0MeqEeK-FvYCaEYIKA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_cyBBIJJmEeOENZsdUoZvrw">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_cyb34JJmEeOENZsdUoZvrw">
+        <references href="resources/patterns.profile.uml#_wlbCUJVoEeOWwNcokQBARg" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="resources/patterns.profile.uml#_lDDfsJJlEeOENZsdUoZvrw"/>
+    </profileApplication>
+  <packagedElement name="CardServiceServer2" xmi:id="_qrG_kBm4EeSorfv2v-N38w" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="DebitCard" xmi:id="_BuNu0Bm5EeSorfv2v-N38w" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="validate" visibility="public" xmi:id="_VO2c4Bm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="create" visibility="public" xmi:id="_UR2pIBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="updateDailyTotal" visibility="public" xmi:id="_ZQd4MBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="updateCardStatus" visibility="public" xmi:id="_cfIzoBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="updateDailyLimit" visibility="public" xmi:id="_eBewIBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="checkDailyLimit" visibility="public" xmi:id="_XSnEYBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="clearTotal" visibility="public" xmi:id="_gngXMBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="updateExpirationDate" visibility="public" xmi:id="_a2PjMBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="updatePIN" visibility="public" xmi:id="_V6_xMBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="delete" visibility="public" xmi:id="_kbLdIBm5EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_jB7LMBm5EeSorfv2v-N38w"/>
+        <ownedAttribute isUnique="false" name="expirationDate" visibility="public" xmi:id="1d3325a3-ff7b-4374-87d8-c0a2ddabeed6">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="fc0b3afb-68fb-4baa-9d65-ea2e54dff5ce" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="e6bb067a-c8f3-499c-b5ce-e0b80beaf438" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="1fc6ac84-5e61-48de-855c-5cc904a24f24" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="limit" visibility="public" xmi:id="cc91892a-3059-4506-ac44-a6b07e11c840">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="c1b9bb53-e598-4f10-98d1-424ff22b7314" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="84630feb-92ae-451a-a6b5-4a6831c7cc00" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="c3f6dcca-0565-472d-91df-19a4af03242d" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="cardId" visibility="public" xmi:id="7473daab-80ab-4c2e-ad55-6d8a74965bf2">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="09a9352f-3b09-4e8e-b85c-77742b65a4e3" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="7a9ac911-99f5-48f8-be75-8e8029877bfb" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="f06bb597-a529-42db-bb72-5b063b7ecd60" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="startDate" visibility="public" xmi:id="4ec8611f-f153-4f68-9838-f9e79f7ee8a2">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="8b509477-b6f3-4b77-9c02-82354bc8347b" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="128c7d32-dc78-4674-9689-ec4bbe1c83bf" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="3754019f-d706-423c-a079-4e2f21deb351" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="PIN" visibility="public" xmi:id="f29f092b-adef-47e4-8aec-e990ef57ec06">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="0b8c1ff5-2c29-4068-84e5-302cee0a1779" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="d330bee5-3896-4d41-bbf5-3f7f85a1171a" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="00f6ee67-e6f4-487a-9748-6f4ed153e2c5" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="total" visibility="public" xmi:id="9ef52a6c-e7d9-4d63-b2e6-d2c5bc96112b">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="71f2cb2b-76c4-4fff-81df-5d7aacafb4bf" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="758eb035-8b8b-40a3-b872-38b17070b07d" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="dce08625-5171-4e3f-aaa3-91dd59fe6619" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="status" visibility="public" xmi:id="b78b6651-4331-4b0f-9233-fa610062f9f0">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="b789a38f-0412-4bd0-b837-7f658b931dcf" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="c9626247-9934-4f98-b945-0af761dd640f" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="5508e49c-2eee-4bfb-ae23-daa40b316720" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement memberEnd="c6ce789b-61b2-4253-8330-7546218c356e c94412e0-7f17-45ed-9306-08a3013ca916" name="CardAccount" xmi:id="_EIp7gBm6EeSorfv2v-N38w" xmi:type="uml:AssociationClass">
+        <ownedEnd association="_EIp7gBm6EeSorfv2v-N38w" name="nome" type="_ePZCkBm0EeSorfv2v-N38w" xmi:id="c94412e0-7f17-45ed-9306-08a3013ca916">
+          <lowerValue value="1" xmi:id="c6fd71ea-b7dc-4de2-a2b3-5ccf85cb971d" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="74284794-6e12-43e6-88ab-79a9d292f35a" xmi:type="uml:LiteralInteger"/>
+        </ownedEnd>
+        <ownedAttribute isUnique="false" name="account" type="_ePZCkBm0EeSorfv2v-N38w" visibility="public" xmi:id="55698ac5-b1c6-4993-a90d-46d0ce8f9ca1">
+          <lowerValue value="1" xmi:id="a3512d31-fcd1-41d1-96bb-2eb490640c41" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="9e09319e-3841-4717-b7ec-9083c8880def" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="f3fa6696-68af-42db-870d-0f1dc9973ef4" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="cardId" visibility="public" xmi:id="c468f8e2-7fed-4bbf-9c2a-d7df261e328e">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="6c6cb6f2-3d9d-4afb-92ef-3d7303a07205" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="be4afd73-427b-472d-ab02-aa25567b11d4" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="b2668fc7-6795-41cc-92bc-fa9a87550ce3" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="accountType" visibility="public" xmi:id="d6ca5be4-bc57-4108-978d-b7034259f30d">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="195bd3de-6426-4d82-abce-15f8a9a26bd4" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="f6fa5d58-794a-4932-9254-22aa6367b8a4" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="97a5e426-e541-457d-a198-4a9ba9c77b0c" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="accountNumber" visibility="public" xmi:id="7a15fa33-6e8f-4ba1-ac71-2c246a11b386">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="d11f4297-c4b2-429c-9986-215eb4fddf14" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="08e04a5f-8a43-4ba0-b35d-50bd9117df54" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="54d7b7fa-8db5-47dc-a40c-73908648edd5" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedOperation isAbstract="false" name="update" visibility="public" xmi:id="_VlGkQBm6EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_UzorEBm6EeSorfv2v-N38w"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="BankingServiceServer1" xmi:id="_OqntIBm0EeSorfv2v-N38w" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Account" xmi:id="_ePZCkBm0EeSorfv2v-N38w" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="close" visibility="public" xmi:id="_0aAOIBm1EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="open" visibility="public" xmi:id="_y1OosBm1EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="credit" visibility="public" xmi:id="_wbjbkBm1EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="readBalance" visibility="public" xmi:id="_u5NfEBm1EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="debit" visibility="public" xmi:id="_xt2J4Bm1EeSorfv2v-N38w"/>
+        <ownedAttribute isUnique="false" name="accountNumber" visibility="public" xmi:id="07a6f67b-7c46-43c9-9a74-ae712822271e">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="32db8eea-3b3f-4b96-91e9-07b9b91d3b0e" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="285eaa51-e01d-4ad5-97aa-f5998969048b" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="13b48bde-d849-498b-9fbd-d2b7325fe5a1" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="debitcard" type="_BuNu0Bm5EeSorfv2v-N38w" visibility="public" xmi:id="0e8d8d43-520c-43b5-b1e8-ecfeef6a4b39">
+          <lowerValue value="1" xmi:id="2c8963ff-1e0d-407d-8e13-83a32752f08d" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="fde7fdf4-3337-4daa-840d-9fd59737c731" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="a812e9ee-5529-4500-aee1-6dcbfca49eab" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="balance" visibility="public" xmi:id="5c72ca05-cfd9-4a07-aa9a-0a57213337dc">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="06e8851b-8293-4ae0-86e3-46bb6b7467c7" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="da6c640d-32df-4715-863c-d769307749fd" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="0b32d568-7362-496f-8360-0aa5edefd30f" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="accountType" visibility="public" xmi:id="871aa826-9174-45b1-bc27-c05ca775c799">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="4028e194-96f7-4152-88c7-32b8b81eb922" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="3e0893d8-3a78-4f22-a12d-e05a2fcaf008" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="b459a43d-c4da-4373-908e-7ac6da4f9186" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute association="_EIp7gBm6EeSorfv2v-N38w" name="ClassDestination" type="_BuNu0Bm5EeSorfv2v-N38w" xmi:id="c6ce789b-61b2-4253-8330-7546218c356e">
+          <lowerValue value="1" xmi:id="d199546b-9410-43fc-8c22-92b4b77c927a" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="b8e515eb-2d6a-46d5-98a5-17f0dbfb4545" xmi:type="uml:LiteralInteger"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="CheckingAccount" xmi:id="_UzvngBm0EeSorfv2v-N38w" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="readLastDepositeAmount" visibility="public" xmi:id="_6SC1ABm0EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="credit" visibility="public" xmi:id="_484_8Bm0EeSorfv2v-N38w"/>
+        <ownedAttribute isUnique="false" name="lastDepositeAccount" visibility="public" xmi:id="68fa0fbb-5c17-424b-a0b0-a71ddb2751fb">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="a390518f-496f-4949-8671-736f44e90c55" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="c19d85b0-bd9f-4b5f-8abb-944b0c0b946b" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="707d90d8-1280-4317-b760-1d4c3f4c15ca" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_ePZCkBm0EeSorfv2v-N38w" xmi:id="10b94928-6440-487c-9315-2e00f9c4435f"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Bank" xmi:id="_gmn_sBm0EeSorfv2v-N38w" xmi:type="uml:Class">
+        <ownedAttribute isUnique="false" name="bankAddress" visibility="public" xmi:id="79d99024-c8b0-4983-905c-059313f2e77b">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="6cde098a-0302-4b79-b266-c26c0e295716" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="47044c40-2ab3-4d62-9813-76a6843d2afb" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="89964737-1bb5-47a6-a4bf-6bec85b36cc9" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="bankName" visibility="public" xmi:id="86de5df8-8101-4877-a539-4cf272deb5b5">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="2be6dada-03f0-4663-8e56-70588cdd28f7" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="d7138cba-80f8-4518-ac10-994f483256a2" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="13907636-b5d0-4b69-9927-f4255a38bcbd" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="SavingsAccount" xmi:id="_ZV91gBm0EeSorfv2v-N38w" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="clearDebitCount" visibility="public" xmi:id="_JHTZEBm1EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="addInterest" visibility="public" xmi:id="_LpsdUBm1EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="readCumulativeInterest" visibility="public" xmi:id="_NYObsBm1EeSorfv2v-N38w"/>
+        <ownedOperation isAbstract="false" name="debit" visibility="public" xmi:id="_H_pNcBm1EeSorfv2v-N38w"/>
+        <ownedAttribute isUnique="false" name="interest" visibility="public" xmi:id="82f80ad4-2bbf-4c05-ad5d-21f17b0a17e2">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="f6ca4514-c328-491a-8168-9b28e84351e7" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="dc89de2f-82ca-4359-9eff-ff06ce9eb55c" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="2bdc8206-c87a-408e-8b42-370faee6cb57" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_ePZCkBm0EeSorfv2v-N38w" xmi:id="78ff69d7-4ae9-4213-97fd-020b744690ce"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="Customer" xmi:id="_nTybQBm0EeSorfv2v-N38w" xmi:type="uml:Class">
+        <ownedAttribute isUnique="false" name="customerId" visibility="public" xmi:id="b50207ee-ee2f-478f-81ca-e60558aba2f4">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="3ca1b382-280f-4667-8100-3a2910b34d58" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="6b0fbd3c-3da4-4cd1-8d2c-7945d10c4e50" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="efdfd758-59b2-4ad4-ad49-0b8032c72c32" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="customerName" visibility="public" xmi:id="34f7602a-1655-4f51-af50-202ba9ffdaa3">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="32ba1cb9-a008-43b3-98fe-7d203213716c" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="ea3e6835-6668-476a-8d72-6a5ea4dabbb6" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="3e4b1939-0d09-4a38-b867-e4f718a42571" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="customerAddress" visibility="public" xmi:id="643a0d91-f438-43f1-8b68-fe2015da81b6">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="dfcb1bcf-a2e7-4d37-9e51-ebc9b081676b" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="9774c7d7-bdd0-474b-951f-60e73d72ec4d" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="a47397ce-6f2f-4dfe-8fb4-c37cb2a080d9" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="DisplayPromptsClient1" xmi:id="_yvYOQBv4EeSTB7Ap1MYkfQ" xmi:type="uml:Package">
+      <packagedElement clientDependency="2d32bf2c-2209-436b-942b-90dc24cec705" isAbstract="false" name="EnglishDisplayPrompts" xmi:id="_RX5PsBv5EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="initialize" visibility="public" xmi:id="_YWIwwGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="addPrompt" visibility="public" xmi:id="_Z_G5sGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_ZXoC8GXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement clientDependency="5ee739be-2a2e-405f-b80f-156375af9639" isAbstract="false" name="FrenchDisplayPrompts" xmi:id="_OKOZ0Bv5EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="initialize" visibility="public" xmi:id="_b0MMAGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="addPrompt" visibility="public" xmi:id="_dYhskGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_ce25oGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement clientDependency="92fc87b4-7692-4db8-b2a9-05b6633c3fb4" isAbstract="false" name="GermanDisplayPrompts" xmi:id="_JHJhgBv5EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="initialize" visibility="public" xmi:id="_Q7DfQGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_S-7bgGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="addPrompt" visibility="public" xmi:id="_TiVDgGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="DisplayPrompts" xmi:id="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_DS0LYBv5EeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="initialize" visibility="public" xmi:id="_BsAloBv5EeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="addPrompt" visibility="public" xmi:id="_EZaAABv5EeSTB7Ap1MYkfQ"/>
+      </packagedElement>
+      <packagedElement clientDependency="58e483c0-8e1d-4677-9b95-97e88d7f7322" isAbstract="false" name="SpanishDisplayPrompts" xmi:id="_LZy5kBv5EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="initialize" visibility="public" xmi:id="_VnfZMGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="addPrompt" visibility="public" xmi:id="_W1xKMGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_WOUvsGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="ATMClient1" xmi:id="_uAVZIBvgEeSTB7Ap1MYkfQ" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="WithdrawalTransaction" xmi:id="_VEpAgBv0EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedAttribute isUnique="false" name="amount" visibility="public" xmi:id="12b3ecac-b906-48de-bfe8-d0bc53c8bdaf">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="40da56f7-1920-42e3-b6af-6277850c28f8" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="54521935-7d91-414a-af0f-e7054433a577" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="5ad6b5de-a609-4c24-8ef1-567c6759dc82" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="balance" visibility="public" xmi:id="16cecb81-8858-4836-a1c1-47d9b0e3e3ba">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="3bff527a-5f47-471d-9ed8-8700bba35333" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="563e8d3f-e20c-48b3-b1a2-252e721f9dc6" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="67f5f8ab-7e14-4a03-8085-14aa8bd2758a" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="accountNumber" visibility="public" xmi:id="e4dea10d-a8f1-41a1-9fe3-5f6606575cf0">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="327b8aa9-c619-4308-9658-48b875cc33b7" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="c15c14c9-4f61-4618-9070-b550ebec465f" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="501b2648-507d-4fb5-94a8-a18beea3b195" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_w9iUoBvhEeSTB7Ap1MYkfQ" xmi:id="e3d19e48-f8c0-4a86-ad38-96334950c440"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="TransferTransaction" xmi:id="_6xfAUBv0EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedAttribute isUnique="false" name="toAccountNumber" visibility="public" xmi:id="461c6a88-57a2-46ea-b287-b0b895b57e33">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="041c3f72-c0a8-402f-acfc-643a860ae56e" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="c9477150-aec9-41cd-aeca-a806ad655ea9" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="5dd31108-50e2-4ba5-8f97-258947896b7d" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="fromAccountNumber" visibility="public" xmi:id="ab15c54f-1fdb-4dfc-a908-d50403973458">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="a94b7671-220f-4995-a598-4c306418f6e3" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="744d33f5-2393-4a05-b3ad-a51007e0317c" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="5d4b6902-135e-4160-bf54-037238e5c9c6" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="amount" visibility="public" xmi:id="195fd40a-6f5f-4be1-880d-a2b9e8dce9e7">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="e7aa61b8-5ac6-4ac6-9bc2-356507774a2a" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="ed36899c-e98d-4728-baaa-d4e60cbe9640" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="0c81c3ad-b4e0-4328-93e6-4cdeba8c7460" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_w9iUoBvhEeSTB7Ap1MYkfQ" xmi:id="81dd5b55-d9bd-4a9f-a722-bf6438fd797e"/>
+      </packagedElement>
+      <packagedElement clientDependency="55d11dd4-0e4d-47f8-ac62-3e3a3adce4ab" isAbstract="false" name="CashDispenser" xmi:id="_s5hAYBvzEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="gatherDispenseMoney" visibility="public" xmi:id="_pOvsoGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="dispenseMoney" visibility="public" xmi:id="_oOiM0GXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="QueryTransaction" xmi:id="_hLRbIBv0EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedAttribute isUnique="false" name="balance" visibility="public" xmi:id="383d547b-2eec-4a41-8133-870d8a22088d">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="c711b7c5-c5a8-41ec-9ec9-8ca5816ad9e3" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="1941e216-90a3-47df-b4a1-9c4827517dba" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="192ab46f-0d62-42bd-bb2e-a7301f57d569" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="accountNumber" visibility="public" xmi:id="d4e7c389-e15f-4d8a-9da9-b78763673fac">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="1e3bd23c-9cf7-4f2d-afdf-026461266267" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="71510ccf-bace-45e9-bf90-323debb36f8a" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="fe2cf65a-1fe8-4267-bd29-ce12a5840aa9" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="lastDepositAmount" visibility="public" xmi:id="1f3c025f-973a-41d9-9f18-aa6771ad9ee6">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="4c1f2239-548f-418e-ad9a-6115e8b090c8" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="31e4fa21-fa35-4c3b-bf4d-7df475c7b26e" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="6432ec29-84a0-4a02-91ba-a9a1f7dacbbb" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_w9iUoBvhEeSTB7Ap1MYkfQ" xmi:id="344e6b86-27b9-48ad-a30c-d6a99809dddc"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="IReceiptPrinter" xmi:id="_PgI-gBvmEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="print" visibility="public" xmi:id="_TOKIYBvmEeSTB7Ap1MYkfQ"/>
+      </packagedElement>
+      <packagedElement clientDependency="d00916cd-c819-4ffe-80db-e35aa7eb5d11" isAbstract="false" name="ATMTransaction" xmi:id="_w9iUoBvhEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="updatePINStatus" visibility="public" xmi:id="_ACFKgBvlEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="updateCustomerInfo" visibility="public" xmi:id="_7obCoBvkEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="updateTransactionStatus" visibility="public" xmi:id="_BxCmsBvlEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="createTransaction" visibility="public" xmi:id="_rK4SIBvkEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_EWLc8BvlEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="updateCustomerSelection" visibility="public" xmi:id="_99if4BvkEeSTB7Ap1MYkfQ"/>
+        <ownedAttribute isUnique="false" name="status" visibility="public" xmi:id="e9c509eb-365e-4524-bce9-fa9e33447a2b">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="1dfd3b79-08d6-4042-bf22-801211781916" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="3c8bb435-0eb9-4df6-98af-0da7a70faaca" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="427f4d95-5ea2-4b3b-97e7-b32e88b38d17" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="cardId" visibility="public" xmi:id="4349b289-adf4-43fb-b732-749926564868">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="d7848efd-458f-447f-bb45-fad143005e6d" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="20113b30-b908-48a2-943c-fd550315c4f6" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="1c0b3a79-5fcf-42f6-8056-bfa1d4261df3" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="time" visibility="public" xmi:id="62336186-cf68-45f3-8b53-a85edb628536">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="a225bfac-5539-4754-8dcc-50c0c8b225c9" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="e028c09c-0ede-46a8-8513-fd18caf7947b" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="29384f06-b955-4509-ac9d-62ad7d3ea6ad" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="PIN" visibility="public" xmi:id="2f6f4515-2059-4a63-8f59-11b9c329fa8b">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="7191dfdd-569d-4ba9-97f9-b454b76df201" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="33b28ba1-34a0-4ae9-adc8-cf75ea129aa1" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="5a59a3b0-c2a5-4cc4-bb01-34db50286c5b" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="date" visibility="public" xmi:id="71355ac1-e521-4642-bde6-743d6a99828e">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="705affa4-d37d-42cd-900a-3b934c90319a" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="fc112dbd-87ab-4049-80e7-dddaaf4963ce" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="21258260-a890-4820-93bc-3150f730d1f4" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="bankId" visibility="public" xmi:id="b7b5c500-1d9f-46f5-8ff6-57f59e48c3a8">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="2e0ee088-8e1e-4cfd-a6d5-55f616301068" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="ed73630e-1b4e-4572-bbf7-52c8a9895cbc" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="22dc3266-4f16-4427-bc1f-0c12beb0aed4" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="transactionType" visibility="public" xmi:id="38dbee65-b677-4e59-b40f-f7655755e540">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="3af467ef-4b2a-4e85-ad49-955f89b684c8" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="5346e5a6-f680-4b9b-b148-913556dd010e" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="c2df5750-ac2a-407d-b6ad-d276cd12b73d" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="ATMId" visibility="public" xmi:id="f40d07e9-7e36-4fa7-9124-d2d41b6f0a73">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="b0f2292e-f5b8-4f70-9566-5856c1fa2f88" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="c3696e3e-4b4a-418d-a0b8-053748e2d5a9" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="79fe5cc2-03e4-481d-a404-6317d814e369" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="CustomerInteraction" xmi:id="_B35e0Bv0EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getMoney" visibility="public" xmi:id="_A9rAEGXTEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="cash" visibility="public" xmi:id="_Bz0k8GXTEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="readCart" visibility="public" xmi:id="_CezboGXTEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement clientDependency="a2a3d873-0a70-454c-8538-4efbad8c2815" isAbstract="false" name="ICashReader" xmi:id="_cTiYgBvmEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_efTFcBvmEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="getAmount" visibility="public" xmi:id="_gW0nwBvmEeSTB7Ap1MYkfQ"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="PINValidationTransaction" xmi:id="_b_v8ABv1EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedAttribute isUnique="false" name="expirationDate" visibility="public" xmi:id="4910346f-228b-46b6-8634-5e91ab1a2f6b">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="7a4945a1-a514-4229-8daf-3f868b93cdf8" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="18168708-73b1-4039-818d-503dc7e274f9" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="40c54395-ced1-43c5-a1fa-cf9619c01926" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="startDate" visibility="public" xmi:id="c0b53db3-2b57-4154-a95e-8d44503a4803">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="0a8f3602-36d3-4d80-9651-e01df3a4c5d3" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="60b5687b-d81a-4649-9873-2a444439c3ec" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="fef4c8b5-8b0f-43f6-8b87-79ddf1949db6" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <generalization general="_w9iUoBvhEeSTB7Ap1MYkfQ" xmi:id="c23e8c8c-dd31-4c84-9737-2a553913eaf2"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="ATMControl" xmi:id="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getMoney" visibility="public" xmi:id="_15TTsGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="readCart" visibility="public" xmi:id="_7qw8AGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="cash" visibility="public" xmi:id="_5QGQYGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement clientDependency="c5a57bc1-7c82-4120-9465-b2e26310f724" isAbstract="false" name="CardReader" xmi:id="_H0G5MBvhEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_sF11kGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="ATMCash" xmi:id="_8p3wMBvyEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="withDrawCash" visibility="public" xmi:id="_TlKAMBvzEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="addCash" visibility="public" xmi:id="_SgCLMBvzEeSTB7Ap1MYkfQ"/>
+        <ownedAttribute isUnique="false" name="tweenties" visibility="public" xmi:id="f69feead-29a8-473c-a0cd-dd1215715965">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="760cff85-81df-4951-8516-b3f6bc9cdbca" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="9677002d-b78d-455a-91bd-69e84e9e5b9f" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="e761f539-c116-48c5-a991-a4613b8fdbe2" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="cashAvailable" visibility="public" xmi:id="51462f3b-b446-47d6-b146-2d3f5b505136">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="1fab631a-26b7-460b-be7e-0659e48acfe5" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="e7777856-9231-4396-bfca-1871a36a180c" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="b0fd9276-9680-41cc-a0dd-f5d0bf95cf95" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="tens" visibility="public" xmi:id="a525f9fc-aed1-4e03-a871-183bbb90a565">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="9f469c6e-3b92-4ef7-827e-7b1cdeeb2745" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="14ef486e-b05f-4bfc-adc3-09534ea8cce2" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="0bfabb4e-44d8-4c2f-8808-516a960c2738" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="fives" visibility="public" xmi:id="8f5a47e4-a529-4d46-aab2-3248ecdab11b">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="3646ad0e-e655-4143-8c3c-861283ecbc28" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="66f5ae14-ed10-4c31-9ffb-84e85e9cdc4b" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="80b8c901-89b0-4bb4-b129-cc1011c4c92c" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="ATMGreeting" xmi:id="_Nkg28Bv0EeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="showGreeting" visibility="public" xmi:id="_zBQvkGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement clientDependency="093a515d-0ff4-4bed-ad34-a2def48354bc" isAbstract="false" name="ReceiptPrinter" xmi:id="_cIp6ABvtEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="print" visibility="public" xmi:id="_l9c7AGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement clientDependency="56854f83-0eb0-417c-a1df-db52af2ce9a0" isAbstract="false" name="CashReader" xmi:id="_sdh2sBvtEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="getAmount" visibility="public" xmi:id="_jtfqkGXSEeSPHKeKOUidlw"/>
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_irk6kGXSEeSPHKeKOUidlw"/>
+      </packagedElement>
+      <packagedElement isAbstract="false" name="ATMCard" xmi:id="_P8fVkBvhEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_dFAD8BvhEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="write" visibility="public" xmi:id="_cPhNcBvhEeSTB7Ap1MYkfQ"/>
+        <ownedAttribute isUnique="false" name="expirationDate" visibility="public" xmi:id="98aa8208-4fe7-437d-be7f-6fe82ea87a0c">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="6ee7f0d2-a1c7-49bd-aaba-e515f44286fa" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="5a7aae7e-fe74-44de-827f-93b650bdc9b9" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="bc21931e-52c9-4265-8022-b05da41b91d9" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="cardNumber" visibility="public" xmi:id="e9843d2b-a954-4ee5-ad23-4efa169f4269">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="6255601f-71a9-447b-b322-df91495edc1f" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="29749e6b-5a87-47ea-bfce-0e23a6635eb7" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="29bedea4-0727-4a3e-a8ee-bf6889824299" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute isUnique="false" name="startDate" visibility="public" xmi:id="984a6832-87ed-4020-9c1c-6617d4e2f21c">
+          <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#" xmi:type="uml:PrimitiveType"/>
+          <lowerValue value="1" xmi:id="17b6b6b1-23ee-4490-bf15-bdde0fa1a87b" xmi:type="uml:LiteralInteger"/>
+          <upperValue value="1" xmi:id="1c6a5de7-6330-459d-8c42-b6948acca9df" xmi:type="uml:LiteralUnlimitedNatural"/>
+          <defaultValue xmi:id="51c3a742-f710-4999-9de2-7a9f30b3bb7b" xmi:type="uml:LiteralString">
+            <value xmi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement clientDependency="68505752-13cc-45ba-9c74-cf8ae6b2ef52" isAbstract="false" name="ICashDispenser" xmi:id="_dRdtcBvzEeSTB7Ap1MYkfQ" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="gatherDispenseMoney" visibility="public" xmi:id="_gHgGcBvzEeSTB7Ap1MYkfQ"/>
+        <ownedOperation isAbstract="false" name="dispenseMoney" visibility="public" xmi:id="_e2mfQBvzEeSTB7Ap1MYkfQ"/>
+      </packagedElement>
+      <ownedComment annotatedElement="_Nkg28Bv0EeSTB7Ap1MYkfQ" xmi:id="3d8b2b38-b6b9-46d4-bf95-1062dfea418c">
+        <body/>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement name="Package21045" xmi:id="6d523f12-966e-4125-b988-d4532e552482" xmi:type="uml:Package">
+      <packagedElement isAbstract="false" name="Interface10500" xmi:id="2770195d-d4a7-44fd-bf9c-525fcb91d64f" xmi:type="uml:Class">
+        <ownedOperation isAbstract="false" name="read" visibility="public" xmi:id="_M0mXkBvhEeSTB7Ap1MYkfQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement memberEnd="f4671a7c-2139-4285-b46b-1f9450e92afb 56d0aab9-8801-41c1-8f78-74ab5547e6cc" name="aTMControl_iReceiptPrinter_1" xmi:id="7f54ff68-3817-45f0-a6af-fc52854e52ff" xmi:type="uml:Association">
+      <ownedEnd association="7f54ff68-3817-45f0-a6af-fc52854e52ff" name="ATMControl" type="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="f4671a7c-2139-4285-b46b-1f9450e92afb">
+        <lowerValue value="1" xmi:id="28264efb-0179-4f43-9d1d-4ca6746827d0" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="ee865fe9-2acb-4277-af7d-5c546239e516" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="7f54ff68-3817-45f0-a6af-fc52854e52ff" name="IReceiptPrinter" type="_PgI-gBvmEeSTB7Ap1MYkfQ" xmi:id="56d0aab9-8801-41c1-8f78-74ab5547e6cc">
+        <lowerValue value="1" xmi:id="9b535616-d29c-4b1b-b40a-815f90049cb1" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="8785a6a8-7780-484c-ac03-b212b713a7ea" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="6cb808f8-9a23-42f0-a1c8-02f6e768e221 0648c059-9130-437a-b0be-6e995fb0efa1" name="aTMControl_aTMTransaction_1" xmi:id="02efe629-1613-4072-8c71-b5f57e8eb267" xmi:type="uml:Association">
+      <ownedEnd association="02efe629-1613-4072-8c71-b5f57e8eb267" name="ATMControl" type="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="6cb808f8-9a23-42f0-a1c8-02f6e768e221">
+        <lowerValue value="0" xmi:id="bdb35835-0c46-46d1-ae0e-c629d6c3b0a5" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="7057950a-0737-4ae6-abbf-3b097a3d9d7c" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="02efe629-1613-4072-8c71-b5f57e8eb267" name="ATMTransaction" type="_w9iUoBvhEeSTB7Ap1MYkfQ" xmi:id="0648c059-9130-437a-b0be-6e995fb0efa1">
+        <lowerValue value="1" xmi:id="c3b7901b-4c94-49c9-a895-722c3fb0df13" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="96dfebf3-3d50-42f9-8f3e-8be4880becdc" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="d670b672-30ce-4bf8-bb10-ee31d230c941 33fca8f8-d878-498d-b3c3-79b1fa9a35d5" name="bank_customer_1" xmi:id="a168aa1e-677a-4a5b-8510-d1661bf10f0d" xmi:type="uml:Association">
+      <ownedEnd association="a168aa1e-677a-4a5b-8510-d1661bf10f0d" name="Bank" type="_gmn_sBm0EeSorfv2v-N38w" xmi:id="d670b672-30ce-4bf8-bb10-ee31d230c941">
+        <lowerValue value="1" xmi:id="f35399c6-c717-48c6-a652-9d678174d11d" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="f45f2853-3baf-43db-9dfe-58a46cfc24ab" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="a168aa1e-677a-4a5b-8510-d1661bf10f0d" name="Customer" type="_nTybQBm0EeSorfv2v-N38w" xmi:id="33fca8f8-d878-498d-b3c3-79b1fa9a35d5">
+        <lowerValue value="1" xmi:id="504dfd00-3989-4e08-b712-52638e3e4316" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="b0e39dd2-4d03-4998-a566-82e38e2af5a9" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="814bdf04-e4f8-4dbc-a40d-41307ef02c44 a5065c06-da5a-436c-a0aa-81b6cbf7fd28" name="customer_debitCard_1" xmi:id="a00002c3-8416-4dc0-9b97-5da9a33a838f" xmi:type="uml:Association">
+      <ownedEnd association="a00002c3-8416-4dc0-9b97-5da9a33a838f" name="Customer" type="_nTybQBm0EeSorfv2v-N38w" xmi:id="814bdf04-e4f8-4dbc-a40d-41307ef02c44">
+        <lowerValue value="1" xmi:id="2768103a-995b-47ea-b605-861330f8c14a" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="66573ad7-0caf-4ff6-b3f5-9042784262ad" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="a00002c3-8416-4dc0-9b97-5da9a33a838f" name="DebitCard" type="_BuNu0Bm5EeSorfv2v-N38w" xmi:id="a5065c06-da5a-436c-a0aa-81b6cbf7fd28">
+        <lowerValue value="0" xmi:id="ff4ae7e3-7bc4-4938-be91-b661daf9cb1f" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="ee360eeb-53d8-429b-93c8-1063dacfeafe" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="aaf2cf84-b9dc-4438-8dd9-01ba50a35a60 471cdd60-0940-46b7-b090-35b2a71994d4" name="customer_account_1" xmi:id="a98f8252-6325-4ef9-8f4d-fbc95d3428bb" xmi:type="uml:Association">
+      <ownedEnd association="a98f8252-6325-4ef9-8f4d-fbc95d3428bb" name="Customer" type="_nTybQBm0EeSorfv2v-N38w" xmi:id="aaf2cf84-b9dc-4438-8dd9-01ba50a35a60">
+        <lowerValue value="1" xmi:id="26a33904-1b0a-4fa8-8ee6-c52637698d96" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="41881157-4c33-4c66-9462-7c4d4d4552b4" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="a98f8252-6325-4ef9-8f4d-fbc95d3428bb" name="Account" type="_ePZCkBm0EeSorfv2v-N38w" xmi:id="471cdd60-0940-46b7-b090-35b2a71994d4">
+        <lowerValue value="1" xmi:id="d0b1948f-dea2-490e-bb85-57bffc81c355" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="c195efad-b998-476e-80f6-e48b74b3114c" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="729d2d86-4f8e-4fba-b1d4-f5e54a6cd37c 61f102b6-1977-41a3-9ece-14da147795b6" name="aTMGreeting_customerInteraction_1" xmi:id="9a9c8eed-a88c-421e-933c-7e4ab19713c5" xmi:type="uml:Association">
+      <ownedEnd association="9a9c8eed-a88c-421e-933c-7e4ab19713c5" name="ATMGreeting" type="_Nkg28Bv0EeSTB7Ap1MYkfQ" xmi:id="729d2d86-4f8e-4fba-b1d4-f5e54a6cd37c">
+        <lowerValue value="1" xmi:id="79f91234-0574-4bde-a9dd-bbb0536c9e37" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="a845a59c-617c-4e98-b2ea-30d4a609afab" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="9a9c8eed-a88c-421e-933c-7e4ab19713c5" name="CustomerInteraction" type="_B35e0Bv0EeSTB7Ap1MYkfQ" xmi:id="61f102b6-1977-41a3-9ece-14da147795b6">
+        <lowerValue value="1" xmi:id="73b76fd4-54bb-4203-be44-fc920115add1" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="123dca2a-7754-4796-8ca1-6b6da010e6d2" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="23b446b8-fe25-4861-8192-d1bd683a7d85 a6299de8-423e-49c8-a294-84d633e96e78" name="bank_debitCard_1" xmi:id="d9c12339-9d3a-49ab-97d4-d0c3a45aba0c" xmi:type="uml:Association">
+      <ownedEnd association="d9c12339-9d3a-49ab-97d4-d0c3a45aba0c" name="Bank" type="_gmn_sBm0EeSorfv2v-N38w" xmi:id="23b446b8-fe25-4861-8192-d1bd683a7d85">
+        <lowerValue value="1" xmi:id="83a15b76-fe72-4bc8-8247-2f060b98fb59" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="4dda1116-e5f1-45a9-ae17-82264c559abe" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="d9c12339-9d3a-49ab-97d4-d0c3a45aba0c" name="DebitCard" type="_BuNu0Bm5EeSorfv2v-N38w" xmi:id="a6299de8-423e-49c8-a294-84d633e96e78">
+        <lowerValue value="1" xmi:id="a97935b2-7301-4538-9758-f67af324694a" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="141badf4-c63b-4425-be11-e523928744bf" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="d06b1b1d-8d73-476b-a5f2-e4aeff8fb980 cfcd588a-af6c-4467-9a50-2a121d1960ba" name="iCashDispenser_aTMControl_1" xmi:id="514a8835-f705-4549-af4c-c23ec6b1076f" xmi:type="uml:Association">
+      <ownedEnd association="514a8835-f705-4549-af4c-c23ec6b1076f" name="ICashDispenser" type="_dRdtcBvzEeSTB7Ap1MYkfQ" xmi:id="d06b1b1d-8d73-476b-a5f2-e4aeff8fb980">
+        <lowerValue value="1" xmi:id="ed9a4346-92ee-45d3-a173-7474f31c9913" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="426da713-f7e2-4452-ba16-993a29d9c583" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="514a8835-f705-4549-af4c-c23ec6b1076f" name="ATMControl" type="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="cfcd588a-af6c-4467-9a50-2a121d1960ba">
+        <lowerValue value="1" xmi:id="ab6b9bb3-ea5e-4a00-8f75-eec014b42420" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="5940d841-20b0-4ea7-92fd-886f1a621e27" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="dc8c98cc-7983-48ec-9b20-1f3ba3cc2a82 1d5d7612-55bd-466c-83de-8f22881b41d8" name="displayPrompts_customerInteraction_1" xmi:id="bbc3c46a-ee19-40de-aec2-9adc62f1fc14" xmi:type="uml:Association">
+      <ownedEnd association="bbc3c46a-ee19-40de-aec2-9adc62f1fc14" name="DisplayPrompts" type="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:id="dc8c98cc-7983-48ec-9b20-1f3ba3cc2a82">
+        <lowerValue value="1" xmi:id="e21a4dc5-66d7-4464-82ee-f8d806be17d1" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="536dd8f9-d7eb-4034-8cc1-1b066025e0c5" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="bbc3c46a-ee19-40de-aec2-9adc62f1fc14" name="CustomerInteraction" type="_B35e0Bv0EeSTB7Ap1MYkfQ" xmi:id="1d5d7612-55bd-466c-83de-8f22881b41d8">
+        <lowerValue value="1" xmi:id="334155d2-ccd7-438c-8b18-f77d100667a6" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="ce12c31a-3f9b-476f-8195-61b749f7cbdf" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="9ba9a1ca-bb04-41ed-aab5-64dca30f4ff3 d07a7234-6bab-4a43-bdae-73e73d78f40c" name="CardAccount" navigableOwnedEnd="d07a7234-6bab-4a43-bdae-73e73d78f40c" xmi:id="e9e0683c-1d93-40e1-8ea8-6ea770665cd4" xmi:type="uml:Association">
+      <ownedEnd association="e9e0683c-1d93-40e1-8ea8-6ea770665cd4" name="Account" type="_ePZCkBm0EeSorfv2v-N38w" xmi:id="9ba9a1ca-bb04-41ed-aab5-64dca30f4ff3">
+        <lowerValue value="1" xmi:id="28c19020-0876-4bd9-ad09-558b9c72b5ba" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="c29d071c-b144-402c-8eb2-e242391926ee" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="e9e0683c-1d93-40e1-8ea8-6ea770665cd4" name="DebitCard" type="_BuNu0Bm5EeSorfv2v-N38w" xmi:id="d07a7234-6bab-4a43-bdae-73e73d78f40c">
+        <lowerValue value="1" xmi:id="26273fd7-5720-4146-a184-5c16b1b2d4be" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="454514ff-2fb2-4656-878f-3f01e69a89ab" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="8946ebe2-5db1-4076-9592-d679fb3efbf3 93cc03cd-c8e6-42e2-aad1-9a157ed87b89" name="customerInteraction_aTMControl_1" xmi:id="8b9620c2-7fd2-43e2-a50d-0f55af66d7ea" xmi:type="uml:Association">
+      <ownedEnd association="8b9620c2-7fd2-43e2-a50d-0f55af66d7ea" name="CustomerInteraction" type="_B35e0Bv0EeSTB7Ap1MYkfQ" xmi:id="8946ebe2-5db1-4076-9592-d679fb3efbf3">
+        <lowerValue value="1" xmi:id="e44b7d9e-4db6-4360-a45a-1a975e81f2ce" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="6b640279-1938-474a-8596-f7643d6051f9" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="8b9620c2-7fd2-43e2-a50d-0f55af66d7ea" name="ATMControl" type="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="93cc03cd-c8e6-42e2-aad1-9a157ed87b89">
+        <lowerValue value="1" xmi:id="14a70d89-00e0-4c59-87d5-dcd7aba7b49a" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="a957f5f6-601b-406e-94de-2fefcc7f84fc" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement memberEnd="757c505d-201c-44d9-ae95-23731a65a4bd 698e199a-1fcc-44b4-96a8-3eee3c2732f1" name="iCashReader_aTMControl_1" xmi:id="ca7e63e8-3698-4225-83a7-4abb26bc6402" xmi:type="uml:Association">
+      <ownedEnd association="ca7e63e8-3698-4225-83a7-4abb26bc6402" name="ICashReader" type="_cTiYgBvmEeSTB7Ap1MYkfQ" xmi:id="757c505d-201c-44d9-ae95-23731a65a4bd">
+        <lowerValue value="1" xmi:id="a01d672d-2510-4389-9a86-8494e33b304f" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="aada52ca-13d3-46ba-a8d9-42d16653eca3" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+      <ownedEnd association="ca7e63e8-3698-4225-83a7-4abb26bc6402" name="ATMControl" type="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="698e199a-1fcc-44b4-96a8-3eee3c2732f1">
+        <lowerValue value="0" xmi:id="bc29b913-9138-44c7-940a-8d922a8466df" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="0dfe873d-f7fe-401d-a15f-3529ed1fd001" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement client="_dRdtcBvzEeSTB7Ap1MYkfQ" name="Dependency3" supplier="_8p3wMBvyEeSTB7Ap1MYkfQ" xmi:id="68505752-13cc-45ba-9c74-cf8ae6b2ef52" xmi:type="uml:Dependency"/>
+    <packagedElement client="_w9iUoBvhEeSTB7Ap1MYkfQ" name="Dependency4" supplier="_ePZCkBm0EeSorfv2v-N38w" xmi:id="d00916cd-c819-4ffe-80db-e35aa7eb5d11" xmi:type="uml:Dependency"/>
+    <packagedElement client="_cTiYgBvmEeSTB7Ap1MYkfQ" name="Dependency2" supplier="_sdh2sBvtEeSTB7Ap1MYkfQ" xmi:id="a2a3d873-0a70-454c-8538-4efbad8c2815" xmi:type="uml:Dependency"/>
+    <packagedElement client="_LZy5kBv5EeSTB7Ap1MYkfQ" name="Realization2" supplier="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:id="58e483c0-8e1d-4677-9b95-97e88d7f7322" xmi:type="uml:Realization"/>
+    <packagedElement client="_s5hAYBvzEeSTB7Ap1MYkfQ" name="Realization4" supplier="_dRdtcBvzEeSTB7Ap1MYkfQ" xmi:id="55d11dd4-0e4d-47f8-ac62-3e3a3adce4ab" xmi:type="uml:Realization"/>
+    <packagedElement client="_JHJhgBv5EeSTB7Ap1MYkfQ" name="Realization1" supplier="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:id="92fc87b4-7692-4db8-b2a9-05b6633c3fb4" xmi:type="uml:Realization"/>
+    <packagedElement client="_cIp6ABvtEeSTB7Ap1MYkfQ" name="Realization2" supplier="_PgI-gBvmEeSTB7Ap1MYkfQ" xmi:id="093a515d-0ff4-4bed-ad34-a2def48354bc" xmi:type="uml:Realization"/>
+    <packagedElement client="_sdh2sBvtEeSTB7Ap1MYkfQ" name="Realization3" supplier="_cTiYgBvmEeSTB7Ap1MYkfQ" xmi:id="56854f83-0eb0-417c-a1df-db52af2ce9a0" xmi:type="uml:Realization"/>
+    <packagedElement client="_RX5PsBv5EeSTB7Ap1MYkfQ" name="Realization4" supplier="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:id="2d32bf2c-2209-436b-942b-90dc24cec705" xmi:type="uml:Realization"/>
+    <packagedElement client="_OKOZ0Bv5EeSTB7Ap1MYkfQ" name="Realization3" supplier="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:id="5ee739be-2a2e-405f-b80f-156375af9639" xmi:type="uml:Realization"/>
+    <packagedElement client="_H0G5MBvhEeSTB7Ap1MYkfQ" name="" supplier="2770195d-d4a7-44fd-bf9c-525fcb91d64f" xmi:id="c5a57bc1-7c82-4120-9465-b2e26310f724" xmi:type="uml:Realization"/>
+  </uml:Model>
+<concerns:english base_Class="_RX5PsBv5EeSTB7Ap1MYkfQ" xmi:id="d14e907e-36c7-4011-b84a-c97cef705e9b"/>
+  <concerns:french base_Class="_OKOZ0Bv5EeSTB7Ap1MYkfQ" xmi:id="4a3fcc71-b0ea-4ef7-8d53-37646dbee586"/>
+  <smarty:alternative_XOR base_Class="_OKOZ0Bv5EeSTB7Ap1MYkfQ" rootVP="" variabilities="DisplayPrompts" xmi:id="1ef3a9fc-2078-4bd4-b80e-f38dc78868bf"/>
+  <concerns:external_output_device base_Class="_s5hAYBvzEeSTB7Ap1MYkfQ" xmi:id="e319c330-c99d-4129-b910-b864119400ac"/>
+  <concerns:german base_Class="_JHJhgBv5EeSTB7Ap1MYkfQ" xmi:id="d345217a-1b0e-4260-b683-325888db5401"/>
+  <smarty:alternative_XOR base_Class="_JHJhgBv5EeSTB7Ap1MYkfQ" rootVP="" variabilities="DisplayPrompts" xmi:id="927df420-a2ea-4229-b070-ebe35312b6ae"/>
+  <concerns:spanish base_Class="_LZy5kBv5EeSTB7Ap1MYkfQ" xmi:id="a5447760-a548-4173-b98f-ed735a4877e1"/>
+  <smarty:alternative_XOR base_Class="_LZy5kBv5EeSTB7Ap1MYkfQ" rootVP="" variabilities="DisplayPrompts" xmi:id="71fd9567-3061-47c0-bf92-c667560949e9"/>
+  <concerns:max_pin_attempts base_Class="_w9iUoBvhEeSTB7Ap1MYkfQ" xmi:id="cf137924-c844-4d47-9fb1-c15434d1fb51"/>
+  <concerns:user_interaction base_Class="_B35e0Bv0EeSTB7Ap1MYkfQ" xmi:id="ebc86091-55bf-48c9-ab8f-7c6925664032"/>
+  <concerns:statement base_Class="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="9fcf13d4-555e-468a-ad4a-e2a465fd5178"/>
+  <concerns:maintenance base_Class="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="2c522af4-b770-4256-8540-daafd31ba761"/>
+  <concerns:state_dependent_control base_Class="_LKAhMBvlEeSTB7Ap1MYkfQ" xmi:id="4e6002e4-f0f6-48fa-8425-f83400ed3486"/>
+  <concerns:external_io_device base_Class="_H0G5MBvhEeSTB7Ap1MYkfQ" xmi:id="c665e8d9-690f-414f-96e5-77933d1d1117"/>
+  <concerns:greeting base_Class="_Nkg28Bv0EeSTB7Ap1MYkfQ" xmi:id="361f331f-31e0-4911-bb3c-db6b024c4d2b"/>
+  <smarty:optional base_Class="_Nkg28Bv0EeSTB7Ap1MYkfQ" rootVP="" variabilities="ATMGreeting" xmi:id="cdd09c4b-a6ad-44de-bb9c-3d5359bdddb9"/>
+  <concerns:external_output_device base_Class="_cIp6ABvtEeSTB7Ap1MYkfQ" xmi:id="8e1a7532-06ec-4334-baa5-9a567b037816"/>
+  <concerns:deposit base_Class="_sdh2sBvtEeSTB7Ap1MYkfQ" xmi:id="4f7a21d2-b4f5-444f-8dac-cf175ab25c7d"/>
+  <smarty:interface base_Class="_cTiYgBvmEeSTB7Ap1MYkfQ" xmi:id="f1eb0473-928f-4807-92c8-7f7f0364a9a3"/>
+  <smarty:optional base_Class="_cTiYgBvmEeSTB7Ap1MYkfQ" rootVP="" variabilities="ICashReader" xmi:id="3604f1b7-a3ba-4b6e-ba2a-ef2b374760af"/>
+  <smarty:interface base_Class="2770195d-d4a7-44fd-bf9c-525fcb91d64f" xmi:id="d097b5cc-d262-4a65-a99d-3d2fd0fa9c6d"/>
+  <smarty:interface base_Class="_PgI-gBvmEeSTB7Ap1MYkfQ" xmi:id="96c49ec1-0a20-4236-821f-d826c19a1741"/>
+  <smarty:interface base_Class="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:id="b24ac93a-7206-45d7-960f-282c984c5b27"/>
+  <smarty:mandatory base_Class="_-j8BcBv4EeSTB7Ap1MYkfQ" rootVP="" variabilities="" xmi:id="10d21a87-d79b-45c6-bf96-816c941642ca"/>
+  <smarty:interface base_Class="_dRdtcBvzEeSTB7Ap1MYkfQ" xmi:id="4f254925-0a8a-4ca5-8726-f4283f41b94b"/>
+  <concerns:deposit base_Class="_cTiYgBvmEeSTB7Ap1MYkfQ" xmi:id="be24f6c0-f437-4ef9-8b36-8f7fe663a994"/>
+  <concerns:output base_Class="_PgI-gBvmEeSTB7Ap1MYkfQ" xmi:id="a9859e98-12c8-40ea-a5ae-86b0492f4109"/>
+  <concerns:external_user base_Class="_-j8BcBv4EeSTB7Ap1MYkfQ" xmi:id="0679b8b7-19ed-4413-9e25-9a3925e766a7"/>
+  <concerns:output base_Class="_dRdtcBvzEeSTB7Ap1MYkfQ" xmi:id="be351569-d97c-4309-a675-f8d7b9d25590"/>
+  <smarty:variability base_Comment="3d8b2b38-b6b9-46d4-bf95-1062dfea418c" bindingTime="DESIGN_TIME" maxSelection="1" minSelection="0" name="ATMGreeting" variants="ATMGreeting" xmi:id="5d7d5c8a-e7ae-4ae4-bd77-748b2aacd018"/>
+</xmi:XMI>
